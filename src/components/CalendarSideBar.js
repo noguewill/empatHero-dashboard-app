@@ -1,10 +1,9 @@
 const CalendarSideBar = () => {
   return (
-    <>
-      {/* <div className="row-span-3   flex flex-col justify-around items-center "> */}
-      {/*     <div className="col-start-1 col-span-1 bg-indigo-600"></div> */}
-      {/*       <div className="col-start-1 col-span-1 bg-indigo-600"></div> */}
-    </>
+    <div className="bg-gray-600 w-2/6 h-full flex flex-col items-center justify-between">
+      <div className="bg-pink-400 w-full h-3/6"></div>
+      <div className="bg-pink-400 w-full h-2/5"></div>
+    </div>
   );
 };
 
