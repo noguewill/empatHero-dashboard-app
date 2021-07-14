@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="2xl:w-24 2xl:h-14 w-16 h-7 rounded-md border border-green-500 flex items-center justify-center">
             <h2 className="2xl:text-base text-xs font-bold"> ESCI</h2>
           </div>
-          <div className="2xl:w-9 2xl:h-9   w-7 h-7 rounded-full bg-green-500 flex justify-center items-center">
+          <div className="bg-green-500 2xl:w-9 2xl:h-9  2xl:text-2xl w-7 h-7 text-white rounded-full  flex justify-center items-center font-bold ">
             ?
           </div>
         </div>

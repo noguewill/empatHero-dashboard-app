@@ -1,6 +1,6 @@
 const EventContainer = () => {
   return (
-    <div className="w-full h-full bg-gray-800 flex flex-col items-center justify-around ">
+    <div className="w-full h-6/7 bg-gray-800 flex flex-col items-center justify-around ">
       {/* Headline for Classes Container */}
       <div className="bg-red-400 w-11/12 h-1/7 pl-5 flex flex-col justify-between">
         <h3 className=" 2xl:text-base md:text-sm ">←Torna alle classi</h3>
@@ -9,10 +9,70 @@ const EventContainer = () => {
         </h1>
       </div>
       {/* Classes container */}
-      <div className="bg-blue-500 w-11/12 h-3/5 flex justify-center items-center px-5">
-        <div className="bg-yellow-400 w-full h-5/6">
-          <div className="bg-green-500 w-full h-1/7"></div>
-          <div></div>
+      <div className="bg-blue-500 w-11/12 h-2/5 flex justify-center items-center px-5">
+        {/* TABLE */}
+        <div className="bg-yellow-400 w-full h-6/7">
+          {/* Table category container */}
+          <div className="bg-green-500 w-full h-1/6">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          {/* Table inner container */}
+          <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6  place-items-center ">
+            {/* Table column elements */}
+            <div className="bg-blue-400 w-10/12 h-full ">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="bg-blue-400 w-10/12 h-full">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="bg-blue-400 w-2/12 h-full">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="bg-blue-400 w-2/12 h-full">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="bg-blue-400 w-2/12 h-full">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className="bg-blue-400 w-2/12 h-full">
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+          </div>
         </div>
       </div>
       {/* Healine for the Adventure Section */}
@@ -26,23 +86,23 @@ const EventContainer = () => {
       <div className="w-11/12 h-2/5 bg-blue-500 flex flex-col items-center justify-center px-5">
         <div className="bg-yellow-400 w-full h-4/5 flex justify-between items-center">
           {/* Inner container for the Adventure Theme Card*/}
-          <div className="bg-blue-400 w-1/4 h-4/5 rounded-md">
+          <div className="bg-blue-400 w-1/4 h-4/5 rounded-md flex">
             <div className="bg-purple-500 w-10/12 h-5/6"></div>
-            <div className="w-2/12"></div>
+            <div className="bg-green-500 w-2/12 h-full"></div>
           </div>
-          <div className="bg-blue-400 w-1/4 h-4/5 rounded-md">
+          <div className="bg-blue-400 w-1/4 h-4/5 rounded-md flex">
             <div className="bg-purple-500 w-10/12 h-5/6"></div>
-            <div className="w-2/12"></div>
+            <div className="bg-green-500 w-2/12 h-full"></div>
           </div>
-          <div className="bg-blue-400 w-1/4 h-4/5 rounded-md">
+          <div className="bg-blue-400 w-1/4 h-4/5 rounded-md flex">
             <div className="bg-purple-500 w-10/12 h-5/6"></div>
-            <div className="w-2/12"></div>
+            <div className="bg-green-500 w-2/12 h-full"></div>
           </div>
         </div>
         {/* Adventure Theme Button Confirmation */}
-        <div className="bg-green-300 w-52 h-10 self-end">
+        <button className="bg-green-300 w-60 rounded-md h-12 self-end font-bold text-white">
           SCEGLI EMPA AVVENTURA
-        </div>
+        </button>
       </div>
     </div>
   );
