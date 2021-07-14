@@ -2,17 +2,23 @@ const StudentsTable = () => {
   return (
     <>
       {/* Classes container */}
-      <section className="bg-blue-500 w-11/12 h-2/5 flex justify-center items-center  px-5">
+      <section className="w-11/12 h-2/5 flex justify-center items-center ">
         {/* TABLE */}
-        <div className="w-full h-6/7 ">
+        <div className="w-full h-full">
           {/* Table category title container */}
-          <div className="bg-green-500 w-full h-1/6 grid grid-cols-6 place-items-center justify-center font-bold 2xl:text-xl ">
-            <h4>Alunno</h4>
+          <div className="bg-green-500 w-full h-1/6 grid grid-cols-6 place-items-center overflow-y-scroll  font-bold 2xl:text-xl ">
+            {/*             <h4>Alunno</h4>
             <h4>Soprannome</h4>
             <h4>Bag</h4>
             <h4>Carica disegno</h4>
             <h4>Visualizza disegno</h4>
-            <h4>Disegno mostrato</h4>
+            <h4>Disegno mostrato</h4> */}
+            <div className="bg-blue-400 w-10/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl"></div>
+            <div className="bg-blue-400 w-10/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl"></div>
+            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl"></div>
+            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl"></div>
+            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl"></div>
+            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl"></div>
           </div>
           {/* Table inner container */}
           <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6  place-items-center overflow-y-scroll">

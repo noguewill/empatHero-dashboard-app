@@ -13,9 +13,9 @@ const EventContainer = () => {
       {/* Table view of the students table and their drawings */}
       <StudentsTable />
       {/* Healine for the Adventure Section */}
-      <div className="bg-red-400 w-11/12 h-1/7 pl-5">
-        <h2 className="font-bold">Empa Avventura</h2>
-        <h2 className="self-start">
+      <div className="bg-red-400 w-11/12  pl-5">
+        <h2 className="font-bold 2xl:text-xl lg:text-lg">Empa Avventura</h2>
+        <h2 className="self-start 2xl:text-lg lg:text-base">
           Seleziona un'Empa Avventura per iniziare!
         </h2>
       </div>

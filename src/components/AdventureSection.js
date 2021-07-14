@@ -2,8 +2,8 @@ const AdventureSection = () => {
   return (
     <>
       {/* Container of Adventure Section */}
-      <section className="w-11/12 h-2/5 bg-blue-500 flex flex-col items-center justify-center px-5">
-        <div className="bg-yellow-400 w-full h-4/5 flex justify-between items-center">
+      <section className="w-11/12 h-3/6 bg-blue-500 flex flex-col items-center justify-center">
+        <div className="bg-yellow-400 w-full h-4/5 flex justify-around items-center">
           {/* Inner container for the Adventure Theme Card*/}
           <div className="bg-blue-400 w-1/4 h-4/5 rounded-md flex">
             <div className="bg-purple-500 w-11/12 h-5/6 flex flex-col justify-around py-5">
