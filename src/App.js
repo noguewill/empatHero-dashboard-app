@@ -6,7 +6,7 @@ const App = () => {
     <>
       {/* Placeholder Flexbox container positioning */}
       <NavBar />
-      <div className="flex w-full h-5/6">
+      <div className="flex w-full h-6/7">
         <CalendarSideBar />
         <EventContainer />
       </div>
