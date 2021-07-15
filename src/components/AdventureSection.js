@@ -2,8 +2,8 @@ const AdventureSection = () => {
   return (
     <>
       {/* Container of Adventure Section */}
-      <section className="w-11/12 h-3/6 bg-blue-500 flex flex-col items-center justify-between">
-        <div className="bg-yellow-400 w-full h-4/5 grid grid-cols-3 gap-4 place-items-center">
+      <section className="w-10/12 h-2/6 bg-blue-500 flex flex-col items-center">
+        <div className="bg-yellow-400 w-full h-5/6 grid grid-cols-3 gap-4 place-items-center">
           {/* Inner container for the Adventure Theme Card*/}
           <div className="bg-blue-400 w-full h-4/5 rounded-md flex">
             <div className="bg-purple-500 h-5/6 flex flex-col justify-around py-5">
@@ -16,7 +16,7 @@ const AdventureSection = () => {
               <h1 className="underline">SCOPRI DI PIÚ</h1>
             </div>
             {/* Aventure theme card checkbox container */}
-            <div className="bg-green-500 w-1/12 h-full flex flex-col items-center pt-5">
+            <div className=" w-1/12 h-full flex flex-col items-center pt-5">
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const AdventureSection = () => {
               <h1 className="underline">SCOPRI DI PIÚ</h1>
             </div>
             {/* Aventure theme card checkbox container */}
-            <div className="bg-green-500 w-1/12 h-full flex flex-col items-center pt-5">
+            <div className=" w-1/12 h-full flex flex-col items-center pt-5">
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
             </div>
           </div>
@@ -46,7 +46,7 @@ const AdventureSection = () => {
               </div>
             </div>
             {/* Aventure theme card checkbox container */}
-            <div className="bg-green-500 w-1/12 h-full flex flex-col items-center pt-5">
+            <div className=" w-1/12 h-full flex flex-col items-center pt-5">
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
             </div>
           </div>

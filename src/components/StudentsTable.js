@@ -2,7 +2,7 @@ const StudentsTable = () => {
   return (
     <>
       {/* Classes container */}
-      <section className="w-11/12 h-2/5 flex justify-center items-center ">
+      <section className="w-10/12 h-2/5 flex justify-center items-center mb-10">
         {/* TABLE */}
         <div className="w-full h-full">
           {/* Table category title container */}
@@ -18,9 +18,9 @@ const StudentsTable = () => {
             <div className=" bg-green-500 w-6 h-full rounded-tr-xl"></div>
           </div>
           {/* Table inner container */}
-          <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6  place-items-center overflow-y-scroll">
+          <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6  place-items-center overflow-y-scroll ">
             {/* Table column elements */}
-            <div className="bg-blue-400 w-10/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl rounded-b-xl">
+            <div className="bg-blue-400 w-9/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl rounded-b-xl">
               <h4>first name</h4>
               <h4>first name</h4>
               <h4>first name</h4>
