@@ -82,15 +82,15 @@ const CalendarSideBar = () => {
       <div className="bg-pink-400 w-full h-2/6 flex flex-col justify-around items-center">
         <div className="bg-gray-500 w-5/6 h-1/5 flex items-center">
           <div className="bg-gray-200 w-14 h-full 2xl:mr-5"></div>
-          <h2 className="2xl:text-2xl">Giornata della'Emapatia</h2>
+          <h2 className="2xl:text-lg">Giornata della'Emapatia</h2>
         </div>
         <div className="bg-gray-500 w-5/6 h-1/5 flex items-center">
           <div className="bg-gray-200 w-14 h-full 2xl:mr-5"></div>
-          <h2 className="2xl:text-2xl">Inizio Empavventura</h2>
+          <h2 className="2xl:text-lg">Inizio Empavventura</h2>
         </div>
         <div className="bg-gray-500 w-5/6 h-1/5 flex items-center">
           <div className="bg-gray-200 w-14 h-full 2xl:mr-5"></div>
-          <h2 className="2xl:text-2xl">Creazione atti di gentilezza</h2>
+          <h2 className="2xl:text-lg">Creazione atti di gentilezza</h2>
         </div>
       </div>
     </div>
