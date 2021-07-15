@@ -18,9 +18,9 @@ const StudentsTable = () => {
             <div className=" bg-green-500 w-6 h-full rounded-tr-xl"></div>
           </div>
           {/* Table inner container */}
-          <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6  place-items-center overflow-y-scroll ">
+          <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6 rounded-b-xl place-items-center overflow-y-scroll z-50">
             {/* Table column elements */}
-            <div className="bg-blue-400 w-9/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl rounded-b-xl">
+            <div className="bg-blue-400 w-9/12 h-full grid grid-cols-1 gap-5 place-items-center 2xl:text-xl rounded-b-xl">
               <h4>first name</h4>
               <h4>first name</h4>
               <h4>first name</h4>
