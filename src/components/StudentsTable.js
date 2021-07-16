@@ -63,32 +63,269 @@ const StudentsTable = () => {
               <h4>6</h4>
             </div>
             <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+                +
+              </div>
             </div>
             <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+                {" "}
+                <svg
+                  className="w-3/5 text-center h-3/5"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-hidden="true"
+                  focusable="false"
+                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 12 12"
+                >
+                  <g fill="none">
+                    <path
+                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                      fill="#626262"
+                    />
+                  </g>
+                </svg>
+              </div>
             </div>
             <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center">
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>

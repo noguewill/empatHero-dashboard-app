@@ -51,10 +51,11 @@ const AdventureSection = () => {
             </div>
           </div>
         </div>
-        <button className="bg-green-300 w-1/5 h-1/6 rounded-md text-sm self-end font-bold text-white">
+
+        {/* Adventure Theme Button Confirmation */}
+        <button className="bg-green-300 w-1/6 h-14 rounded-lg text-sm self-end font-bold text-white">
           SCEGLI EMPA AVVENTURA
         </button>
-        {/* Adventure Theme Button Confirmation */}
       </section>
     </>
   );

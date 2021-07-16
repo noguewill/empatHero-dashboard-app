@@ -1,8 +1,8 @@
 import EmpatHeroLogo from "./assets/EmpatHeroLogo";
 const Navbar = () => {
   return (
-    <div className="w-full flex items-center justify-center">
-      <nav className="bg-gray-600 w-11/12   flex justify-between items-center 2xl:px-10 lg:px-8">
+    <div className="w-full flex items-center justify-center ">
+      <nav className="bg-gray-600 w-11/12   flex justify-between items-center 2xl:px-10 lg:px-8 ">
         <div className=" bg-gray-500  flex items-center ">
           <EmpatHeroLogo />
         </div>
