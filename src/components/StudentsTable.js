@@ -20,7 +20,7 @@ const StudentsTable = () => {
           {/* Table inner container */}
           <div className="bg-pink-500 w-full h-6/7 2xl:text-xl text-sm grid grid-cols-6 rounded-b-xl place-items-center overflow-y-scroll scroller ">
             {/* Table column elements */}
-            <div className="bg-blue-400 w-9/12 h-full  grid grid-cols-1 gap-5 place-items-center  rounded-b-xl">
+            <div className="bg-blue-400 w-9/12 h-full  grid grid-cols-1 gap-5 place-items-center  py-2">
               <h4>first name</h4>
               <h4>first name</h4>
               <h4>first name</h4>
@@ -34,7 +34,7 @@ const StudentsTable = () => {
               <h4>first name</h4>
               <h4>first name</h4>
             </div>
-            <div className="bg-blue-400 w-10/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl">
+            <div className="bg-blue-400 w-10/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl py-2">
               <h4>surname</h4>
               <h4>surname</h4>
               <h4>surname</h4>
@@ -48,7 +48,7 @@ const StudentsTable = () => {
               <h4>surname</h4>
               <h4>surname</h4>
             </div>
-            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl">
+            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl py-2">
               <h4>1</h4>
               <h4>2</h4>
               <h4>3</h4>
@@ -62,7 +62,7 @@ const StudentsTable = () => {
               <h4>5</h4>
               <h4>6</h4>
             </div>
-            <div className="bg-blue-400 w-3/12 h-full text-lg grid grid-cols-1 gap-4 place-items-center text-white">
+            <div className="bg-blue-400 w-3/12 h-full text-lg grid grid-cols-1 gap-4 place-items-center text-white py-2">
               <div className="bg-gray-500 2xl:w-7 w-5  2xl:h-7 h-5 rounded-full flex justify-center items-center">
                 +
               </div>
@@ -100,7 +100,7 @@ const StudentsTable = () => {
                 +
               </div>
             </div>
-            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center">
+            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center py-2">
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -327,7 +327,7 @@ const StudentsTable = () => {
                 </svg>
               </div>
             </div>
-            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center">
+            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center py-2">
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
