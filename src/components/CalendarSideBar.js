@@ -22,8 +22,8 @@ const CalendarSideBar = () => {
                 </svg>
               </div>
             </div>
-            <div className="flex font-bold 2xl:text-xl">
-              <h1 className="mr-1 2xl:text-xl font-bold">July 2021</h1>
+            <div className="flex font-bold 2xl:text-xl lg:text-lg">
+              <h1 className="mr-1">July 2021</h1>
             </div>
             <div className="w-2/12 h-full bg-green-400 flex justify-center items-center">
               <div className="w-4 h-4 bg-blue-400">
@@ -42,7 +42,7 @@ const CalendarSideBar = () => {
               </div>
             </div>
           </div>
-          <div className="w-full h-1/7 bg-indigo-700 grid grid-cols-7 place-items-center">
+          <div className="bg-indigo-700  w-full h-1/7 2xl:text-base lg:text-xs grid grid-cols-7 place-items-center ">
             <h4 className="">Lun</h4>
             <h4 className="">Mar</h4>
             <h4 className="">Mer</h4>
@@ -51,8 +51,8 @@ const CalendarSideBar = () => {
             <h4 className="">Sab</h4>
             <h4 className="">Dom</h4>
           </div>
-          <div className="bg-indigo-400 w-full h-5/6 grid grid-cols-7 place-items-center">
-            <div className="bg-gray-600 w-9/12 h-full flex flex-col justify-around items-center text-center">
+          <div className="bg-indigo-400 w-full h-5/6 2xl:text-base lg:text-xs grid grid-cols-7 place-items-center">
+            <div className="bg-gray-600 w-9/12 h-full  flex flex-col justify-around items-center text-center">
               <div className="w-full h-1/7 bg-blue-400 text-gray-300">29</div>
               <div className="w-full h-1/7 bg-blue-400">6</div>
               <div className="w-full h-1/7 bg-blue-400">13</div>
@@ -180,7 +180,7 @@ const CalendarSideBar = () => {
         </div>
       </div>
       {/* Calendar Legend c0ntainer */}
-      <div className="bg-pink-400 w-full h-2/6 flex flex-col justify-evenly items-center">
+      <div className="bg-pink-400 w-full h-2/6 2xl:text-base text-sm flex flex-col justify-evenly items-center">
         <div className="bg-gray-500 w-5/6 h-1/6 flex items-center">
           <div className="bg-gray-200 w-14 h-full 2xl:mr-5">
             <svg

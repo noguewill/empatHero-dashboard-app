@@ -14,8 +14,8 @@ const EventContainer = () => {
       <StudentsTable />
       {/* Healine for the Adventure Section */}
       <div className="bg-red-400 w-10/12 h-auto ">
-        <h2 className="font-bold 2xl:text-xl lg:text-lg">Empa Avventura</h2>
-        <h2 className="self-start 2xl:text-lg lg:text-base">
+        <h2 className="font-bold 2xl:text-xl text-base">Empa Avventura</h2>
+        <h2 className="2xl:text-lg text-sm">
           Seleziona un'Empa Avventura per iniziare!
         </h2>
       </div>

@@ -7,7 +7,7 @@ const StudentsTable = () => {
         <div className="w-full h-full">
           {/* Table category title container */}
           <div className="w-full h-1/6 flex">
-            <div className="bg-green-500 w-full h-full grid grid-cols-6 place-items-center  font-bold 2xl:text-xl rounded-tl-xl">
+            <div className="bg-green-500 w-full h-full 2xl:text-xl text-xs font-bold  grid grid-cols-6 place-items-center  rounded-tl-xl">
               <h4 className="2xl:text-base">Alunno</h4>
               <h4 className="2xl:text-base">Soprannome</h4>
               <h4 className="2xl:text-base">Bag</h4>
@@ -18,9 +18,9 @@ const StudentsTable = () => {
             <div className=" bg-green-500 w-6 h-full rounded-tr-xl"></div>
           </div>
           {/* Table inner container */}
-          <div className="bg-pink-500 w-full h-6/7 grid grid-cols-6 rounded-b-xl place-items-center overflow-y-scroll scroller ">
+          <div className="bg-pink-500 w-full h-6/7 2xl:text-xl text-sm grid grid-cols-6 rounded-b-xl place-items-center overflow-y-scroll scroller ">
             {/* Table column elements */}
-            <div className="bg-blue-400 w-9/12 h-full grid grid-cols-1 gap-5 place-items-center 2xl:text-xl rounded-b-xl">
+            <div className="bg-blue-400 w-9/12 h-full  grid grid-cols-1 gap-5 place-items-center  rounded-b-xl">
               <h4>first name</h4>
               <h4>first name</h4>
               <h4>first name</h4>
@@ -62,46 +62,46 @@ const StudentsTable = () => {
               <h4>5</h4>
               <h4>6</h4>
             </div>
-            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+            <div className="bg-blue-400 w-3/12 h-full text-lg grid grid-cols-1 gap-4 place-items-center text-white">
+              <div className="bg-gray-500 2xl:w-7 w-5  2xl:h-7 h-5 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full text-center text-white text-lg">
+              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
               </div>
             </div>
-            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 <svg
                   className="w-3/5 text-center h-3/5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -119,7 +119,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -138,7 +138,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -157,7 +157,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -176,7 +176,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -195,7 +195,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -214,7 +214,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -233,7 +233,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 <svg
                   className="w-3/5 text-center h-3/5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -251,7 +251,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 <svg
                   className="w-3/5 text-center h-3/5"
                   xmlns="http://www.w3.org/2000/svg"
@@ -269,7 +269,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -288,7 +288,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -307,7 +307,7 @@ const StudentsTable = () => {
                   </g>
                 </svg>
               </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-full flex items-center justify-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
                 {" "}
                 <svg
                   className="w-3/5 text-center h-3/5"
@@ -327,19 +327,19 @@ const StudentsTable = () => {
                 </svg>
               </div>
             </div>
-            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 rounded-md "></div>
+            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center">
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
             </div>
           </div>
         </div>
