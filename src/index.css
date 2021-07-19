@@ -40,3 +40,43 @@ body {
   scrollbar-color: #7ebcf3 lightgray;
   scrollbar-width: thin;
 }
+.parent {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+.div2 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.btnPlus {
+  background-color: #3fa482;
+}
+:hover.btnPlus {
+  background-color: #63a58f;
+  transform: scale(1.1);
+}
+
+.searchIcon {
+  background-color: #f08645;
+}
+:hover.searchIcon {
+  background-color: #eb9a67;
+  transform: scale(1.1);
+}
+/* 
+light-blue: #7EBCF3
+light-orange: #F08645
+light-green: #3FA482
+bg-lighterBlue-adventureThemeCard: #F9F9F9
+Calendar-sidebar: #F3F9F7
+buttonConfirm-lightGreen: #9BD8C3
+light-Black: #2C2C2C
+checkBox-gray: #959595 
+*/
