@@ -54,3 +54,29 @@ body {
 .div2 {
   grid-area: 1 / 1 / 2 / 2;
 }
+
+.btnPlus {
+  background-color: #3fa482;
+}
+:hover.btnPlus {
+  background-color: #63a58f;
+  transform: scale(1.1);
+}
+
+.searchIcon {
+  background-color: #f08645;
+}
+:hover.searchIcon {
+  background-color: #eb9a67;
+  transform: scale(1.1);
+}
+/* 
+light-blue: #7EBCF3
+light-orange: #F08645
+light-green: #3FA482
+bg-lighterBlue-adventureThemeCard: #F9F9F9
+Calendar-sidebar: #F3F9F7
+buttonConfirm-lightGreen: #9BD8C3
+light-Black: #2C2C2C
+checkBox-gray: #959595 
+*/

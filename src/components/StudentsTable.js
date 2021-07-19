@@ -63,8 +63,8 @@ const StudentsTable = () => {
               <h4>6</h4>
             </div>
             <div className="bg-blue-400 w-3/12 h-full text-lg grid grid-cols-1 gap-4 place-items-center text-white py-2">
-              <div className="bg-gray-500 2xl:w-7 w-5  2xl:h-7 h-5 rounded-full flex justify-center items-center">
-                +
+              <div className="btnPlus 2xl:w-7 w-5  2xl:h-7 h-5 rounded-full  cursor-pointer  duration-150 transition-all  flex items-center justify-center">
+                <p className="">+</p>
               </div>
               <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
                 +
@@ -101,9 +101,9 @@ const StudentsTable = () => {
               </div>
             </div>
             <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center py-2">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
+              <div className="searchIcon 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center cursor-pointer">
                 <svg
-                  className="w-3/5 text-center h-3/5"
+                  className="w-3/5 text-center h-3/5 "
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   focusable="false"
@@ -114,7 +114,7 @@ const StudentsTable = () => {
                   <g fill="none">
                     <path
                       d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
+                      fill="white"
                     />
                   </g>
                 </svg>
@@ -328,7 +328,7 @@ const StudentsTable = () => {
               </div>
             </div>
             <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center py-2">
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
+              <div className="border-4 border-gray-400 2xl:w-7 2xl:h-7 w-5 h-5 rounded-lg hover:bg-gray-300 cursor-pointer"></div>
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
               <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
