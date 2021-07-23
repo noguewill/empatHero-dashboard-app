@@ -1,3 +1,5 @@
+import studentData from "./StudentData";
+
 const StudentsTable = () => {
   return (
     <>
@@ -7,340 +9,57 @@ const StudentsTable = () => {
         <div className="w-full h-full">
           {/* Table category title container */}
           <div className="w-full h-1/6 flex">
-            <div className="bg-green-500 w-full h-full 2xl:text-xl text-xs font-bold  grid grid-cols-6 place-items-center  rounded-tl-xl">
-              <h4 className="2xl:text-base">Alunno</h4>
-              <h4 className="2xl:text-base">Soprannome</h4>
-              <h4 className="2xl:text-base">Bag</h4>
-              <h4 className="2xl:text-base">Carica disegno</h4>
-              <h4 className="2xl:text-base">Visualizza disegno</h4>
-              <h4 className="2xl:text-base">Disegno mostrato</h4>
+            <div className=" bg-empatLightBlue bg-opacity-30 w-full h-full 2xl:text-lg text-xs font-bold  grid grid-cols-6 place-items-center  rounded-tl-xl">
+              <h4 className="pl-14">Alunno</h4>
+              <h4 className="pl-14">Soprannome</h4>
+              <h4 className="pl-14">Bag</h4>
+              <h4 className="pl-10">Carica disegno</h4>
+              <h4 className="pl-10">Visualizza disegno</h4>
+              <h4 className="pl-10">Disegno mostrato</h4>
             </div>
-            <div className=" bg-green-500 w-6 h-full rounded-tr-xl"></div>
+            <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl"></div>
           </div>
           {/* Table inner container */}
-          <div className="bg-pink-500 w-full h-6/7 2xl:text-xl text-sm grid grid-cols-6 rounded-b-xl place-items-center overflow-y-scroll scroller ">
+
+          <div className="bg-indigo-100 w-full h-6/7 2xl:text-xl text-sm   rounded-b-xl  overflow-y-scroll-hidden scroller ">
             {/* Table column elements */}
-            <div className="bg-blue-400 w-9/12 h-full  grid grid-cols-1 gap-5 place-items-center  py-2">
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-              <h4>first name</h4>
-            </div>
-            <div className="bg-blue-400 w-10/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl py-2">
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-              <h4>surname</h4>
-            </div>
-            <div className="bg-blue-400 w-2/12 h-full grid grid-cols-1 gap-4 place-items-center 2xl:text-xl py-2">
-              <h4>1</h4>
-              <h4>2</h4>
-              <h4>3</h4>
-              <h4>4</h4>
-              <h4>5</h4>
-              <h4>6</h4>
-              <h4>1</h4>
-              <h4>2</h4>
-              <h4>3</h4>
-              <h4>4</h4>
-              <h4>5</h4>
-              <h4>6</h4>
-            </div>
-            <div className="bg-blue-400 w-3/12 h-full text-lg grid grid-cols-1 gap-4 place-items-center text-white py-2">
-              <div className="btnPlus 2xl:w-7 w-5  2xl:h-7 h-5 rounded-full  cursor-pointer  duration-150 transition-all  flex items-center justify-center">
-                <p className="">+</p>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-              <div className="bg-gray-500 2xl:w-7 w-5 h-5 2xl:h-7 rounded-full flex justify-center items-center">
-                +
-              </div>
-            </div>
-            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center py-2">
-              <div className="searchIcon 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center cursor-pointer">
-                <svg
-                  className="w-3/5 text-center h-3/5 "
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
+
+            {studentData.map((student, index) => {
+              return (
+                <div
+                  key={index}
+                  className=" w-full h-1/6 grid grid-cols-6 place-items-center bg-gray-100 pl-8"
                 >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="white"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center">
-                {" "}
-                <svg
-                  className="w-3/5 text-center h-3/5"
-                  xmlns="http://www.w3.org/2000/svg"
-                  aria-hidden="true"
-                  focusable="false"
-                  /* style={-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);} */
-                  preserveAspectRatio="xMidYMid meet"
-                  viewBox="0 0 12 12"
-                >
-                  <g fill="none">
-                    <path
-                      d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                      fill="#626262"
-                    />
-                  </g>
-                </svg>
-              </div>
-            </div>
-            <div className="bg-blue-400 w-3/12 h-full grid grid-cols-1 gap-4 place-items-center py-2">
-              <div className="border-4 border-gray-400 2xl:w-7 2xl:h-7 w-5 h-5 rounded-lg hover:bg-gray-300 cursor-pointer"></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-              <div className="bg-gray-500 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md "></div>
-            </div>
+                  <h4 className="2xl:text-l text-empatBlack">{student.name}</h4>
+
+                  <h4 className="2xl:text-lg text-empatBlack">
+                    {student.nickName}
+                  </h4>
+                  <h4 className=" ">{student.id}</h4>
+                  <div className="btnPlus 2xl:w-7 w-5 2xl:h-7 h-5 rounded-full flex items-center justify-center cursor-pointer  duration-150 transition-all">
+                    <p className="flex p-3 text-white 2xl:text-2xl">+</p>
+                  </div>
+                  <div className="searchIcon 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center cursor-pointer duration-150 transition-all">
+                    <svg
+                      className="w-3/5 h-3/5 text-center"
+                      xmlns="http://www.w3.org/2000/svg"
+                      aria-hidden="true"
+                      focusable="false"
+                      preserveAspectRatio="xMidYMid meet"
+                      viewBox="0 0 12 12"
+                    >
+                      <g fill="none">
+                        <path
+                          d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                          fill="white"
+                        />
+                      </g>
+                    </svg>
+                  </div>
+                  <div className="border-2 border-empatGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md hover:bg-gray-200 cursor-pointer duration-150 transition-all"></div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>

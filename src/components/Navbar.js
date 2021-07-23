@@ -2,11 +2,11 @@ import EmpatHeroLogo from "./assets/EmpatHeroLogo";
 const Navbar = () => {
   return (
     <div className="w-full flex items-center justify-center ">
-      <nav className="bg-gray-600 w-11/12  flex justify-between items-center 2xl:px-10 lg:px-8 py-2">
-        <div className=" bg-gray-500  flex items-center ">
+      <nav className=" w-11/12  flex justify-between items-center 2xl:px-10 lg:px-8 pt-6 ">
+        <div className="  flex items-center ">
           <EmpatHeroLogo />
         </div>
-        <div className="bg-gray-500 w-1/5 flex items-center justify-around ">
+        <div className="w-1/5 flex items-center justify-around ">
           <div>
             <h2 className="2xl:text-xl text-sm font-bold ">Ciao Cristina!</h2>
           </div>

@@ -2,13 +2,13 @@ import Calendar from "./Calendar";
 const CalendarSideBar = () => {
   return (
     /* Calendar sidebar container */
-    <div className="bg-gray-600 w-2/6 h-6/7 flex flex-col items-center justify-between ">
+    <div className="w-2/6 h-6/7 flex flex-col items-center justify-between ">
       {/* Calendar container */}
       <Calendar />
       {/* Calendar Legend container */}
-      <div className="bg-pink-400 w-full h-2/6 2xl:text-base text-sm flex flex-col justify-evenly items-center">
-        <div className="bg-gray-500 w-5/6 h-1/6 flex items-center">
-          <div className="bg-gray-200 w-14 h-full 2xl:mr-5">
+      <div className=" w-full h-2/6 2xl:text-base text-sm flex flex-col justify-evenly items-center">
+        <div className=" w-5/6 h-1/6 flex items-center">
+          <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
               viewBox="0 0 32 32"
@@ -23,10 +23,12 @@ const CalendarSideBar = () => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg">Giornata dell'Empatia</h2>
+          <h2 className="2xl:text-lg font-bold text-empatBlack">
+            Giornata dell'Empatia
+          </h2>
         </div>
-        <div className="bg-gray-500 w-5/6 h-1/6 flex items-center">
-          <div className="bg-gray-200 w-14 h-full 2xl:mr-5">
+        <div className=" w-5/6 h-1/6 flex items-center">
+          <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
               viewBox="0 0 32 32"
@@ -41,10 +43,12 @@ const CalendarSideBar = () => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg">Inizio EmpAvventura</h2>
+          <h2 className="2xl:text-lg font-bold text-empatBlack">
+            Inizio EmpAvventura
+          </h2>
         </div>
-        <div className="bg-gray-500 w-5/6 h-1/6 flex items-center">
-          <div className="bg-gray-200 w-14 h-full 2xl:mr-5">
+        <div className=" w-5/6 h-1/6 flex items-center">
+          <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
               viewBox="0 0 32 32"
@@ -59,7 +63,9 @@ const CalendarSideBar = () => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg">Creazione atti di gentilezza</h2>
+          <h2 className="2xl:text-lg font-bold text-empatBlack">
+            Creazione atti di gentilezza
+          </h2>
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const Calendar = () => {
   }
 
   return (
-    <div className="bg-pink-400 w-full h-3/5 flex justify-center items-end ">
+    <div className="w-full h-3/5 flex justify-center items-end ">
       <div className="bg-red-500 w-10/12 h-6/7 flex flex-col justify-around font-bold">
         <div className="bg-yellow-500 w-full h-1/5 flex justify-between items-center">
           <div className="w-2/12 h-full bg-green-400 flex justify-center items-center">
