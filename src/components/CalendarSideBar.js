@@ -6,8 +6,8 @@ const CalendarSideBar = () => {
       {/* Calendar container */}
       <Calendar />
       {/* Calendar Legend container */}
-      <div className=" w-full h-2/6 2xl:text-base text-sm flex flex-col justify-evenly items-center">
-        <div className=" w-5/6 h-1/6 flex items-center">
+      <div className=" w-full h-2/6 2xl:text-base text-sm flex flex-col  items-center">
+        <div className=" w-5/6 h-1/6 flex items-center my-3">
           <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
@@ -27,7 +27,7 @@ const CalendarSideBar = () => {
             Giornata dell'Empatia
           </h2>
         </div>
-        <div className=" w-5/6 h-1/6 flex items-center">
+        <div className=" w-5/6 h-1/6 flex items-center my-3">
           <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
@@ -47,7 +47,7 @@ const CalendarSideBar = () => {
             Inizio EmpAvventura
           </h2>
         </div>
-        <div className=" w-5/6 h-1/6 flex items-center">
+        <div className=" w-5/6 h-1/6 flex items-center my-3">
           <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
@@ -63,7 +63,7 @@ const CalendarSideBar = () => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg font-bold text-empatBlack">
+          <h2 className="2xl:text-lg font-bold text-empatBlack ">
             Creazione atti di gentilezza
           </h2>
         </div>
