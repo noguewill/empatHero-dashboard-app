@@ -9,7 +9,7 @@ module.exports = {
         "7/8": "93%",
       },
       fontSize: {
-        xxs: "10px",
+        xxs: "11px",
       },
       colors: {
         empatBlue: "#7EBCF3",

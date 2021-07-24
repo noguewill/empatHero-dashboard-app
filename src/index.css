@@ -70,3 +70,17 @@ body {
   background-color: #e0702a;
   transform: scale(1.3);
 }
+
+/* Animation of "Torna alle classi" arrow */
+@keyframes moveLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10px);
+  }
+}
+
+:hover.arrowContainer > .arrowMoveLeft {
+  animation: moveLeft forwards 1s ease-in-out;
+}

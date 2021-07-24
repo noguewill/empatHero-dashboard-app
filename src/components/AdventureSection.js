@@ -11,7 +11,7 @@ const AdventureSection = () => {
           <AdventureCard theme={2} />
         </div>
         {/* Adventure Theme Button Confirmation */}
-        <button className="bg-green-300 2xl:w-1/5  2xl:h-12 lg:w-44 lg:h-9 rounded-lg  self-end  text-white">
+        <button className="bg-empatLightGreen 2xl:w-1/5  2xl:h-12 lg:w-44 lg:h-9 rounded-lg  self-end  text-white hover:bg-opacity-70 transition-all duration-150 ease-in-out">
           <p className="2xl:text-sm font-bold  lg:text-xxs ">
             SCEGLI EMPA AVVENTURA
           </p>

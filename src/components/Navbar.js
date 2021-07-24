@@ -13,7 +13,7 @@ const Navbar = () => {
           <button className="2xl:w-24 2xl:h-14 w-16 h-7 rounded-md border border-green-500 flex items-center justify-center hover:bg-green-400 hover:text-white transition-all duration-150 ease-in-out">
             <h3 className="2xl:text-sm text-xs font-bold"> ESCI</h3>
           </button>
-          <div className="bg-green-500 2xl:w-9 2xl:h-9  2xl:text-2xl w-7 h-7 text-white rounded-full  flex justify-center items-center font-bold ">
+          <div className="bg-green-500 2xl:w-9 2xl:h-9  2xl:text-2xl w-7 h-7 text-white rounded-full  flex justify-center items-center font-bold cursor-pointer hover:bg-opacity-70 transition-all duration-150 ease-in-out ">
             ?
           </div>
         </div>
