@@ -27,6 +27,7 @@ const EventContainer = () => {
         </h2>
       </div>
       {/* Themed adventure section */}
+      {/* If  */}
       <AdventureSection />
     </div>
   );

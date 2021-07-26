@@ -16,12 +16,12 @@ const Calendar = () => {
 
   return (
     <div className="w-full h-3/5 flex justify-center items-end ">
-      <div className="bg-red-500 w-10/12 h-6/7  flex flex-col justify-around font-bold">
-        <div className="bg-yellow-500 w-full  h-1/5 flex justify-between items-center">
-          <div className="w-2/12 h-full bg-green-400 flex justify-center items-center">
-            <div className="w-4 h-4 bg-blue-400">
+      <div className=" w-10/12 h-6/7  flex flex-col justify-around font-bold">
+        <div className=" w-full  h-1/5 flex justify-between items-center">
+          <div className="w-2/12 h-full flex justify-center items-center">
+            <div className="w-3 h-3 ">
               <svg
-                className="w-4 h-4"
+                className="w-3 h-3"
                 viewBox="0 0 8 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,10 +39,10 @@ const Calendar = () => {
               {monthStr} {year}
             </h1>
           </div>
-          <div className="w-2/12 h-full bg-green-400 flex justify-center items-center">
-            <div className="w-4 h-4 bg-blue-400">
+          <div className="w-2/12 h-full flex justify-center items-center">
+            <div className="w-3 h-3 ">
               <svg
-                className="w-4 h-4"
+                className="w-3 h-3"
                 viewBox="0 0 8 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -56,7 +56,7 @@ const Calendar = () => {
             </div>
           </div>
         </div>
-        <div className="bg-indigo-700  w-full h-1/7 2xl:text-base lg:text-xs grid grid-cols-7 place-items-center ">
+        <div className=" w-full h-1/7 2xl:text-base lg:text-xs text-empatGray grid grid-cols-7 place-items-center ">
           <h4 className="">Lun</h4>
           <h4 className="">Mar</h4>
           <h4 className="">Mer</h4>
@@ -65,120 +65,120 @@ const Calendar = () => {
           <h4 className="">Sab</h4>
           <h4 className="">Dom</h4>
         </div>
-        <div className="bg-gray-800 w-full h-5/6   2xl:text-base lg:text-xs flex flex-col justify-evenly">
-          <div className="bg-gray-500  w-full grid grid-cols-7 place-items-center ">
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300 flex justify-center items-center">
+        <div className="w-full h-5/6   2xl:text-base lg:text-xs flex flex-col justify-evenly">
+          <div className="  w-full grid grid-cols-7 place-items-center ">
+            <div className="w-4/6 text-empatGray  h-9  flex justify-center items-center">
+              29
+            </div>
+            <div className="w-4/6 text-empatGray  h-9  flex justify-center items-center">
+              31
+            </div>
+            <div className="w-4/6  h-9   flex justify-center items-center">
+              1
+            </div>
+            <div className="w-4/6  h-9   flex justify-center items-center">
+              {/*  {numDays[0]} */}2
+            </div>
+            <div className="w-4/6  h-9   flex justify-center items-center">
+              {/*  {numDays[0 + 1]} */}3
+            </div>
+            <div className="w-4/6  h-9   flex justify-center items-center">
+              {/* {numDays[0 + 2]} */}4
+            </div>
+            <div className="w-4/6  h-9   flex justify-center items-center">
+              {/*   {numDays[0 + 3]} */}5
+            </div>
+          </div>
+          <div className=" w-full grid grid-cols-7 place-items-center ">
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              {/*  {numDays[0 + 4]} */}6
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              7
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              8
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              9
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              10
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              11
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              12
+            </div>
+          </div>
+          <div className=" w-full grid grid-cols-7 place-items-center ">
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              {/*   {numDays[1]} */}13
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              14
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              15
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              16
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              17
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              18
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              19
+            </div>
+          </div>
+          <div className=" w-full grid grid-cols-7 place-items-center ">
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              {/* {numDays[1]} */}20
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              21
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              22
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              23
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              24
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              25
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              26
+            </div>
+          </div>
+          <div className=" w-full grid grid-cols-7 place-items-center ">
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              27
+            </div>
+            <div className="w-4/6  h-9  flex justify-center items-center">
               28
             </div>
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300 flex justify-center items-center">
+            <div className="w-4/6  h-9  flex justify-center items-center">
               29
             </div>
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
+            <div className="w-4/6  h-9  flex justify-center items-center">
               30
             </div>
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
-              {numDays[0]}
+            <div className="w-4/6  h-9  flex justify-center items-center">
+              31
             </div>
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
-              {numDays[0 + 1]}
+            <div className="w-4/6 text-empatGray  h-9  flex justify-center items-center">
+              1
             </div>
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
-              {numDays[0 + 2]}
-            </div>
-            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
-              {numDays[0 + 3]}
-            </div>
-          </div>
-          <div className="bg-gray-500 w-full grid grid-cols-7 place-items-center ">
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              {numDays[0 + 4]}
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-          </div>
-          <div className="bg-gray-500  w-full grid grid-cols-7 place-items-center ">
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              {numDays[1]}
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-          </div>
-          <div className="bg-gray-500  w-full grid grid-cols-7 place-items-center ">
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              {numDays[1]}
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-          </div>
-          <div className="bg-gray-500  w-full grid grid-cols-7 place-items-center ">
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              {numDays[1]}
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
-            </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
-              29
+            <div className="w-4/6  text-empatGray h-9  flex justify-center items-center">
+              2
             </div>
           </div>
         </div>

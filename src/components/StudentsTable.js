@@ -56,7 +56,10 @@ const StudentsTable = () => {
                       </g>
                     </svg>
                   </div>
-                  <div className="border-2 border-empatGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md hover:bg-gray-200 cursor-pointer duration-150 transition-all"></div>
+                  <input
+                    type="checkbox"
+                    className="border-2 border-empatGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md hover:bg-gray-200 cursor-pointer duration-150 transition-all"
+                  ></input>
                 </div>
               );
             })}
