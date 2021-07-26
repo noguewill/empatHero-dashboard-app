@@ -4,7 +4,7 @@ const StudentsTable = () => {
   return (
     <>
       {/* Classes container */}
-      <section className="w-10/12 h-2/5 flex justify-center items-center mb-10">
+      <section className="w-11/12 h-2/5 flex justify-center items-center mb-10">
         {/* TABLE */}
         <div className="w-full h-full">
           {/* Table category title container */}
