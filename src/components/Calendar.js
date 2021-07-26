@@ -16,8 +16,8 @@ const Calendar = () => {
 
   return (
     <div className="w-full h-3/5 flex justify-center items-end ">
-      <div className="bg-red-500 w-10/12 h-6/7 flex flex-col justify-around font-bold">
-        <div className="bg-yellow-500 w-full h-1/5 flex justify-between items-center">
+      <div className="bg-red-500 w-10/12 h-6/7  flex flex-col justify-around font-bold">
+        <div className="bg-yellow-500 w-full  h-1/5 flex justify-between items-center">
           <div className="w-2/12 h-full bg-green-400 flex justify-center items-center">
             <div className="w-4 h-4 bg-blue-400">
               <svg
@@ -65,27 +65,27 @@ const Calendar = () => {
           <h4 className="">Sab</h4>
           <h4 className="">Dom</h4>
         </div>
-        <div className="bg-gray-800 w-full h-5/6 2xl:text-base lg:text-xs flex flex-col justify-around">
+        <div className="bg-gray-800 w-full h-5/6   2xl:text-base lg:text-xs flex flex-col justify-evenly">
           <div className="bg-gray-500  w-full grid grid-cols-7 place-items-center ">
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300 flex justify-center items-center">
               28
             </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300 flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300 flex justify-center items-center">
               29
             </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
               30
             </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
               {numDays[0]}
             </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
               {numDays[0 + 1]}
             </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
               {numDays[0 + 2]}
             </div>
-            <div className="w-3/6  h-full bg-blue-400 text-gray-300  flex place-content-center">
+            <div className="w-4/6  h-9 bg-blue-400 text-gray-300  flex justify-center items-center">
               {numDays[0 + 3]}
             </div>
           </div>

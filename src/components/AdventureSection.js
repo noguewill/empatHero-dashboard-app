@@ -3,7 +3,7 @@ const AdventureSection = () => {
   return (
     <>
       {/* Container of Adventure Section */}
-      <section className="w-10/12 h-2/6  flex flex-col items-center">
+      <section className="w-11/12 h-2/6  flex flex-col items-center">
         <div className=" w-full h-5/6 grid grid-cols-3 gap-4 place-items-center">
           {/*Props indicates the current theme*/}
           <AdventureCard theme={0} />

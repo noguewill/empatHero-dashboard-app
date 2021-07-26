@@ -4,7 +4,7 @@ const EventContainer = () => {
   return (
     <div className="w-full h-7/8 flex flex-col items-center justify-around ">
       {/* Headline for Classes Container */}
-      <div className=" w-10/12 h-1/7 flex flex-col justify-between">
+      <div className=" w-11/12 h-1/7 flex flex-col justify-between">
         <div className="flex w-1/6 items-center arrowContainer">
           <span className="arrowMoveLeft transition-all duration-300 ">←</span>
           <h3 className=" 2xl:text-base md:text-sm cursor-pointer ">
@@ -18,7 +18,7 @@ const EventContainer = () => {
       {/* Table view of the students table and their drawings */}
       <StudentsTable />
       {/* Healine for the Adventure Section */}
-      <div className=" w-10/12 h-auto ">
+      <div className=" w-11/12 h-auto ">
         <h2 className="font-bold 2xl:text-xl text-base text-empatBlack">
           Empa Avventura
         </h2>
