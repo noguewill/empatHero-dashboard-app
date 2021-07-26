@@ -1,7 +1,9 @@
+import { useState } from "react";
 import CalendarSideBar from "./components/CalendarSideBar";
 import EventContainer from "./components/EventContainer";
 import NavBar from "./components/Navbar";
 const App = () => {
+  const [confirmAdventure, setConfirmAdventure] = useState(false);
   return (
     <>
       {/* Placeholder Flexbox container positioning */}
