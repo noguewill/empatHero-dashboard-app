@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ConfirmModal from "./ConfirmModal";
 import CalendarSideBar from "./components/CalendarSideBar";
 import EventContainer from "./components/EventContainer";
 import NavBar from "./components/Navbar";
@@ -9,9 +10,10 @@ const App = () => {
   console.log(currAdventure);
   return (
     <>
-      {/* Placeholder Flexbox container positioning */}
       {confirmAdventure ? (
-        <div className="absolute w-screen h-screen bg-gray-900 bg-opacity-40 flex justify-center items-center"></div>
+        <>
+          <ConfirmModal />
+        </>
       ) : null}
       <NavBar />
       <div className="flex w-full h-6/7">
