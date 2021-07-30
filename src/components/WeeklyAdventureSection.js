@@ -42,7 +42,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
             />
           </svg>
 
-          <h2 className=" 2xl:text-lg max-w-xs  text-sm font-bold text-gray-600 ">
+          <h2 className=" 2xl:text-lg 2xl:max-w-xs  text-sm font-bold text-gray-600 ">
             Potrai selezionare una nuova Empa Avventura solo al termine dell'
             <br />
             avventura attualmente selezionata.

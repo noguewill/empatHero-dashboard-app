@@ -10,7 +10,7 @@ const StudentsTable = () => {
           {/* Table category title container */}
           <div className="w-full h-1/6 flex">
             <div className=" bg-empatLightBlue bg-opacity-30 w-full h-full 2xl:text-lg text-xs font-bold  grid grid-cols-6 place-items-center  rounded-tl-xl">
-              <h4 className="pl-14">Alunno</h4>
+              <h4 className="pl-14 place-self-start self-center">Alunno</h4>
               <h4 className="pl-14">Soprannome</h4>
               <h4 className="pl-14">Bag</h4>
               <h4 className="pl-10">Carica disegno</h4>
@@ -28,13 +28,13 @@ const StudentsTable = () => {
                 return (
                   <div
                     key={index}
-                    className=" w-full h-1/6 grid grid-cols-6 place-items-center bg-gray-100  pl-8"
+                    className=" w-full h-1/6 grid grid-cols-6 place-items-center bg-gray-100 pt-3 pb-4 pl-10 "
                   >
-                    <h4 className="2xl:text-l   text-empatBlack">
+                    <h4 className="2xl:text-l place-self-start self-center pl-4 text-empatBlack">
                       {student.name}
                     </h4>
 
-                    <h4 className="2xl:text-lg text-empatBlack">
+                    <h4 className="2xl:text-lg place-self-start self-center 2xl:pl-12 lg:pl-8 pl-5 text-empatBlack">
                       {student.nickName}
                     </h4>
                     <h4 className=" ">{student.id}</h4>
