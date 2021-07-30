@@ -1,25 +1,47 @@
+import { useState } from "react";
 const Calendar = () => {
+  
   const dateObj = new Date();
-  console.log(dateObj.getUTCMonth() + 1); // This gets an integer number of the day
-  console.log(dateObj.toLocaleString("it-IT", { month: "long" }));
-  let monthStr = dateObj.toLocaleString("it-IT", { month: "long" }); //months from 1-12.
+  const month = dateObj.getUTCMonth() + 1; // This gets an integer number of the day
+  const [currMonth, setCurrMonth] = useState(month);
+  const year = dateObj.getUTCFullYear(); /* Gets the year integer form YYYY */
+  let monthStr = new Date(year, currMonth, 0).toLocaleString("it-IT", {
+    month: "long",
+  }); //string of months from 1-12.
   monthStr = monthStr.charAt().toUpperCase() + monthStr.slice(1);
-  const month = dateObj.getMonth() + 1;
+  /* Takes the first character of the month string and make it uppercase */
 
-  const year = dateObj.getUTCFullYear();
-  const daysInMonth = new Date(month, year, 0).getDate();
+  /* Tracks the current month */
+  /* Takes the year and month variable to identify how many days there is in the current month */
+  const daysInPastMonth = new Date(year, currMonth, 0).getDate();
+  const daysInCurrMonth = new Date(year, currMonth + 1, 0).getDate();
+  const daysInNextMonth = new Date(year, currMonth + 2, 0).getDate();
 
-  let numDays = [];
-  for (let i = 1; i < daysInMonth; i++) {
-    numDays.push(i);
+  /* Loops through the numbers of days in the current month and pushes to currNumDays array */
+  const pastNumDays = [];
+  for (let i = 1; i <= daysInPastMonth; i++) {
+    pastNumDays.push(i);
   }
+  const currNumDays = [];
+  for (let i = 1; i <= daysInCurrMonth; i++) {
+    currNumDays.push(i);
+  }
+  const futureNumDays = [];
+  for (let i = 1; i <= daysInNextMonth; i++) {
+    futureNumDays.push(i);
+  }
+
+
 
   return (
     <div className="w-full h-3/5 flex justify-center items-end ">
       <div className=" w-10/12 h-6/7  flex flex-col justify-around font-bold">
         <div className=" w-full  h-1/5 flex justify-between items-center">
           <div className="w-2/12 h-full flex justify-center items-center">
-            <div className="w-3 h-3 ">
+            <button
+              className="w-3 h-3"
+              onClick={() => setCurrMonth(currMonth - 1)}
+            >
               <svg
                 className="w-3 h-3"
                 viewBox="0 0 8 12"
@@ -32,15 +54,18 @@ const Calendar = () => {
                   fillOpacity="0.54"
                 />
               </svg>
-            </div>
+            </button>
           </div>
           <div className="flex font-bold 2xl:text-xl lg:text-lg">
-            <h1 className="mr-1">
+            <button className="mr-1">
               {monthStr} {year}
-            </h1>
+            </button>
           </div>
           <div className="w-2/12 h-full flex justify-center items-center">
-            <div className="w-3 h-3 ">
+            <button
+              className="w-3 h-3"
+              onClick={() => setCurrMonth(currMonth + 1)}
+            >
               <svg
                 className="w-3 h-3"
                 viewBox="0 0 8 12"
@@ -53,7 +78,7 @@ const Calendar = () => {
                   fillOpacity="0.54"
                 />
               </svg>
-            </div>
+            </button>
           </div>
         </div>
         <div className=" w-full h-1/7 2xl:text-base lg:text-xs text-empatGray grid grid-cols-7 place-items-center ">
@@ -65,121 +90,88 @@ const Calendar = () => {
           <h4 className="">Sab</h4>
           <h4 className="">Dom</h4>
         </div>
-        <div className="w-full h-5/6   2xl:text-base lg:text-xs flex flex-col justify-evenly">
-          <div className="  w-full grid grid-cols-7 place-items-center ">
-            <div className="w-4/6 text-empatGray  h-9  flex justify-center items-center">
-              29
-            </div>
-            <div className="w-4/6 text-empatGray  h-9  flex justify-center items-center">
-              31
-            </div>
-            <div className="w-4/6  h-9   flex justify-center items-center">
-              1
-            </div>
-            <div className="w-4/6  h-9   flex justify-center items-center">
-              {/*  {numDays[0]} */}2
-            </div>
-            <div className="w-4/6  h-9   flex justify-center items-center">
-              {/*  {numDays[0 + 1]} */}3
-            </div>
-            <div className="w-4/6  h-9   flex justify-center items-center">
-              {/* {numDays[0 + 2]} */}4
-            </div>
-            <div className="w-4/6  h-9   flex justify-center items-center">
-              {/*   {numDays[0 + 3]} */}5
-            </div>
+        <div className="w-full h-full flex flex-col justify-around  items-center ">
+          <div className="w-full h-auto flex justify-between bg-gray-100 ">
+            {pastNumDays.slice(-2).map((pastDay, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs text-empatGray flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {pastDay}
+                </button>
+              );
+            })}
+
+            {/* Map is going through currNumDays array and returning a JSX element with the value inside of it, slice method is limiting it from 1-5 */}
+            {currNumDays.slice(0, 5).map((day, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {day}
+                </button>
+              );
+            })}
           </div>
-          <div className=" w-full grid grid-cols-7 place-items-center ">
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              {/*  {numDays[0 + 4]} */}6
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              7
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              8
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              9
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              10
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              11
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              12
-            </div>
+          <div className="w-full h-auto flex justify-between  ">
+            {currNumDays.slice(5, 12).map((day, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {day}
+                </button>
+              );
+            })}
           </div>
-          <div className=" w-full grid grid-cols-7 place-items-center ">
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              {/*   {numDays[1]} */}13
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              14
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              15
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              16
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              17
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              18
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              19
-            </div>
+          <div className="w-full h-auto flex justify-between  ">
+            {currNumDays.slice(12, 19).map((day, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {day}
+                </button>
+              );
+            })}
           </div>
-          <div className=" w-full grid grid-cols-7 place-items-center ">
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              {/* {numDays[1]} */}20
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              21
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              22
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              23
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              24
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              25
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              26
-            </div>
+          <div className="w-full h-auto flex justify-between  ">
+            {currNumDays.slice(19, 26).map((day, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {day}
+                </button>
+              );
+            })}
           </div>
-          <div className=" w-full grid grid-cols-7 place-items-center ">
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              27
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              28
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              29
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              30
-            </div>
-            <div className="w-4/6  h-9  flex justify-center items-center">
-              31
-            </div>
-            <div className="w-4/6 text-empatGray  h-9  flex justify-center items-center">
-              1
-            </div>
-            <div className="w-4/6  text-empatGray h-9  flex justify-center items-center">
-              2
-            </div>
+          <div className="w-full h-auto flex justify-between  ">
+            {currNumDays.slice(26).map((day, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {day}
+                </button>
+              );
+            })}
+            {futureNumDays.slice(0, 2).map((futureDay, i) => {
+              return (
+                <button
+                  key={i}
+                  className=" w-10  h-9 2xl:text-base  lg:text-xs text-empatGray flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                >
+                  {futureDay}
+                </button>
+              );
+            })}
           </div>
         </div>
       </div>

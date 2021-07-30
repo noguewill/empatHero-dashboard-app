@@ -1,15 +1,28 @@
-const ConfirmModal = () => {
+import adventureData from "./themeData";
+const ConfirmModal = ({
+  setConfirmModal,
+  confirmAdventure,
+  setConfirmAdventure,
+  setCurrAdventure,
+  currAdventure,
+}) => {
+  const showWeeklyAdventure = () => {
+    setConfirmModal(false);
+    setConfirmAdventure(true);
+    setCurrAdventure(null);
+  };
+
   return (
     <>
       {/*        <div className="absolute w-screen h-screen bg-gray-900 bg-opacity-30 filter blur-3xl "></div> */}
       <div className="absolute w-screen h-screen  bg-gray-900 bg-opacity-30 flex justify-center items-center">
         {/* Modal container */}
         <div className="bg-white w-auto h-72 flex flex-col rounded-xl ">
-          <div className="w-full flex justify-end ">
+          <div className="w-full flex justify-end pr-5 ">
             <button
-              /* onClick={()=> closeModal()} */
+              onClick={() => setConfirmModal(false)}
               type="button"
-              className=" lg:text-3xl text-empatGreen mt-2 pr-5"
+              className=" w-auto h-auto mt-1 lg:text-3xl text-3xl text-empatGreen   hover:text-red-500 xButton transition "
             >
               x
             </button>
@@ -19,7 +32,10 @@ const ConfirmModal = () => {
               Empa Avventura selezionata
             </h1>
             <p className="w-11/12 text-sm my-2">
-              Hai selezionato l'avventura <b>Empa Safari</b>. Una volta <br />
+              Hai selezionato l'avventura{" "}
+              {/* Displays the name of the theme dynamically based on the current selected checkbox */}
+              <b>{adventureData[currAdventure].themeName}</b>. Una volta
+              <br />
               selezionata un'Empa Avventura non è possibile tornare indietro.
               Potrai selezionare una nuova avventura solo al termine
               dell'avventura attualmente selezionata.
@@ -31,14 +47,16 @@ const ConfirmModal = () => {
           {/* Button container */}
           <div className="w-full h-1/6 flex justify-around items-center   ">
             <button
+              onClick={() => setConfirmModal(false)}
               type="button"
-              className="w-40 h-5/6 border-2 border-empatGray font-bold 2xl:text-base text-xs flex justify-center items-center rounded-md"
+              className="w-40 h-5/6 border border-empatGray font-bold 2xl:text-base text-xs flex justify-center items-center rounded-md hover:bg-red-500 transition-all duration-150 hover:text-white "
             >
               ANNULLA
             </button>
             <button
+              onClick={() => showWeeklyAdventure()}
               type="button"
-              className="w-40 h-5/6 bg-empatGreen text-white  2xl:text-base text-xs flex justify-center items-center rounded-md"
+              className="w-40 h-5/6 bg-empatGreen  text-white  2xl:text-base text-xs flex justify-center items-center rounded-md hover:bg-green-700 transition-all duration-150"
             >
               CONFERMA
             </button>
