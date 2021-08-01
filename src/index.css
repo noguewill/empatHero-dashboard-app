@@ -33,13 +33,13 @@ body {
 /* *::-webkit-scrollbar-thumb:hover {
   background: rgb(139, 183, 248);
 } */
-* *::-webkit-scrollbar {
+/* * *::-webkit-scrollbar {
   height: 5px;
 }
 .scroller {
   scrollbar-color: #7ebcf3 lightgray;
   scrollbar-width: thin;
-}
+} */
 .parent {
   display: grid;
   grid-template-columns: 1fr;
@@ -71,6 +71,10 @@ body {
   transform: scale(1.3);
 }
 
+:hover.xButton {
+  transform: scale(1.3);
+}
+
 /* Animation of "Torna alle classi" arrow */
 @keyframes moveLeft {
   from {
@@ -80,7 +84,48 @@ body {
     transform: translateX(-10px);
   }
 }
+@keyframes moveLeftMinus {
+  from {
+    transform: translateX(-10);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
 
 :hover.arrowContainer > .arrowMoveLeft {
   animation: moveLeft forwards 1s ease-in-out;
+}
+.arrowMoveLeft {
+  animation-name: moveLeftMinus;
+  animation-duration: 1s;
+}
+
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #7ebcf3 white;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: white;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #7ebcf3;
+  border-radius: 60px;
+  border: 2px solid white;
+}
+
+/* Box shadow parent element */
+.dropShadow {
+  box-shadow: -8px -8px 14px 0px #ffffffb2;
+  box-shadow: 8px 8px 14px 0px #e2e2e266;
+  -webkit-box-shadow: -8px -8px 14px 0px #ffffffb2;
+  -webkit-box-shadow: 8px 8px 14px 0px #e2e2e266;
 }
