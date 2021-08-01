@@ -6,7 +6,7 @@ import NavBar from "./components/Navbar";
 const App = () => {
   const [confirmModal, setConfirmModal] = useState(false);
   const [confirmAdventure, setConfirmAdventure] = useState(false);
-  const [currAdventure, setCurrAdventure] = useState(0);
+  const [currAdventure, setCurrAdventure] = useState();
 
   return (
     <>

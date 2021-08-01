@@ -46,7 +46,9 @@ const AdventureAccordion = ({ currAdventure }) => {
             <p className="2xl:max-w-3xl lg:max-w-xl lg:text-sm self-start 2xl:text-xl text-gray-700">
               {adventureData[currAdventure].themeWeekly[index].weekMessage}
             </p>
-            <button className="bg-empatOrange 2xl:w-60  2xl:h-16 lg:w-36 lg:h-10 rounded-xl self-start text-white hover:bg-opacity-90 transition  ease-in-out">
+            <button
+              className={`bg-${adventureData[currAdventure].themeColor} 2xl:w-60  2xl:h-16 lg:w-36 lg:h-10 rounded-xl self-start text-white hover:bg-opacity-90 transition  ease-in-out`}
+            >
               <p className="2xl:text-lg font-bold  lg:text-xs ">
                 SCARICA LA MAPA
               </p>
@@ -82,7 +84,7 @@ const AdventureAccordion = ({ currAdventure }) => {
                           fillRule="evenodd"
                           clipRule="evenodd"
                           d="M11.6819 0C5.4315 0 0.364258 4.925 0.364258 11C0.364258 17.075 5.4315 22 11.6819 22C17.9324 22 22.9996 17.075 22.9996 11C22.9996 4.925 17.9324 0 11.6819 0ZM8.29384 8.793C8.09979 8.61084 7.8399 8.51005 7.57013 8.51233C7.30036 8.5146 7.0423 8.61977 6.85154 8.80518C6.66078 8.99059 6.55257 9.2414 6.55022 9.5036C6.54788 9.7658 6.65159 10.0184 6.839 10.207L10.9545 14.207C11.1475 14.3945 11.4091 14.4998 11.6819 14.4998C11.9548 14.4998 12.2164 14.3945 12.4094 14.207L16.5249 10.207C16.7123 10.0184 16.816 9.7658 16.8137 9.5036C16.8113 9.2414 16.7031 8.99059 16.5124 8.80518C16.3216 8.61977 16.0635 8.5146 15.7938 8.51233C15.524 8.51005 15.2641 8.61084 15.0701 8.793L11.6819 12.086L8.29384 8.793Z"
-                          fill="#F08645"
+                          fill={adventureData[currAdventure].themeIconColor}
                         />
                       </svg>
                       {/* : <FiPlus />} */}

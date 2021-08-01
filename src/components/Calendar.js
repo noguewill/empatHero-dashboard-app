@@ -1,10 +1,10 @@
 import { useState } from "react";
 const Calendar = () => {
   const dateObj = new Date();
-  const month = dateObj.getUTCMonth() + 1; // This gets an integer number of the day
+  const month = dateObj.getUTCMonth(); // This gets an integer number of the day
   const [currMonth, setCurrMonth] = useState(month);
   const year = dateObj.getUTCFullYear(); /* Gets the year integer form YYYY */
-  let monthStr = new Date(year, currMonth, 0).toLocaleString("it-IT", {
+  let monthStr = new Date(year, currMonth, 1).toLocaleString("it-IT", {
     month: "long",
   }); //string of months from 1-12.
   monthStr = monthStr.charAt().toUpperCase() + monthStr.slice(1);
@@ -17,7 +17,10 @@ const Calendar = () => {
   const daysInCurrMonth = new Date(year, currMonth + 1, 0).getDate();
   const daysInNextMonth = new Date(year, currMonth + 2, 0).getDate();
 
+  const firstDay = new Date(year, month, 1);
+
   console.log(dateObj.getDay());
+  console.log(firstDay);
 
   /* Loops through the numbers of days in the current month and pushes to currNumDays array */
   const pastNumDays = [];

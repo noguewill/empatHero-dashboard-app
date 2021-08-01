@@ -58,7 +58,9 @@ const EventContainer = ({
             </h2>
             <h2 className="2xl:text-lg text-sm text-empatBlack ">
               Hai scelto l'avventura
-              <b className="text-empatOrange ml-1">
+              <b
+                className={`text-${adventureData[currAdventure].themeColor} ml-1`}
+              >
                 {adventureData[currAdventure].themeName}
               </b>
             </h2>
