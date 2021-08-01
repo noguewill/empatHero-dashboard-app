@@ -9,12 +9,10 @@ const ConfirmModal = ({
   const showWeeklyAdventure = () => {
     setConfirmModal(false);
     setConfirmAdventure(true);
-    setCurrAdventure(null);
   };
 
   return (
     <>
-      {/*        <div className="absolute w-screen h-screen bg-gray-900 bg-opacity-30 filter blur-3xl "></div> */}
       <div className="absolute w-screen h-screen  bg-gray-900 bg-opacity-30 flex justify-center items-center">
         {/* Modal container */}
         <div className="bg-white w-auto h-72 flex flex-col rounded-xl ">

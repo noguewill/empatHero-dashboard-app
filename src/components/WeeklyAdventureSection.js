@@ -11,10 +11,10 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
           {/* Adventure card */}
 
           <div className="flex flex-col w-5/6 h-full justify-center">
-            <h1 className=" 2xl:text-xl  text-base font-bold">
+            <h1 className=" 2xl:text-xl  text-sm font-bold">
               {adventureData[0].themeName}
             </h1>
-            <h2 className=" 2xl:text-lg text-sm mb-3">
+            <h2 className=" 2xl:text-lg   text-xs mb-3">
               {adventureData[0].themeMessage}
             </h2>
             <h1
@@ -27,7 +27,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
         {/* Adventure notice card */}
         <div className={` w-full h-3/6 rounded-md flex items-center `}>
           <svg
-            className="w-7 h-7 mr-4"
+            className="2xl:w-7 2xl:h-7 w-6 h-6 mr-4 "
             viewBox="0 0 10 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
             />
           </svg>
 
-          <h2 className=" 2xl:text-lg 2xl:max-w-xs  text-sm font-bold text-gray-600 ">
+          <h2 className=" 2xl:text-lg 2xl:max-w-xs text-xs font-bold text-gray-600">
             Potrai selezionare una nuova Empa Avventura solo al termine dell'
             <br />
             avventura attualmente selezionata.

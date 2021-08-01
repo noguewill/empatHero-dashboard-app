@@ -4,7 +4,8 @@ const adventureData = [
     themeName: "Empa Safari",
     themeColor: "empatOrange",
     themeBG: "",
-    themeMessage: "Un'avventura incredibile, piena di nuovi amici!",
+    themeMessage:
+      "Un'avventura incredibile, piena di nuovi amici! Lorem ipsum dolor sitamet ",
     themeWeekly: [
       {
         weekDate: "1ª Settimana ( 1 Agosto - 8 Agosto )",
@@ -36,7 +37,8 @@ const adventureData = [
     themeName: "Viaggio nel tempo",
     themeColor: "empatGreen",
     themeBG: "",
-    themeMessage: "Un'avventura incredibile, piena di nuovi amici!",
+    themeMessage:
+      "Un'avventura incredibile, piena di nuovi amici! Lorem ipsum dolor sitamet ",
   },
 ];
 export default adventureData;

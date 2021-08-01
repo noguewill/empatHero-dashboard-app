@@ -7,10 +7,9 @@ const EventContainer = ({
   setCurrAdventure,
   setConfirmModal,
   confirmAdventure,
-  setConfirmAdventure,
 }) => {
-  console.log(adventureData);
-  console.log(currAdventure);
+  console.log();
+
   return (
     <div className="w-full h-7/8 flex flex-col items-center justify-around ">
       {/* Headline for Classes Container */}
@@ -53,13 +52,15 @@ const EventContainer = ({
         </>
       ) : (
         <>
-          <div className=" w-11/12 h-auto ">
+          <div className=" w-11/12 h-1/7 lg:h-1/6">
             <h2 className="font-bold 2xl:text-xl text-base text-empatBlack">
               Empa Avventura
             </h2>
             <h2 className="2xl:text-lg text-sm text-empatBlack ">
-              Hai scelto l'avventura{" "}
-              <b className="text-empatOrange">{adventureData[0].themeName}</b>
+              Hai scelto l'avventura
+              <b className="text-empatOrange ml-1">
+                {adventureData[currAdventure].themeName}
+              </b>
             </h2>
           </div>
           <WeeklyAdventureSection currAdventure={currAdventure} />

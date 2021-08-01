@@ -1,6 +1,5 @@
 import { useState } from "react";
 const Calendar = () => {
-  
   const dateObj = new Date();
   const month = dateObj.getUTCMonth() + 1; // This gets an integer number of the day
   const [currMonth, setCurrMonth] = useState(month);
@@ -9,6 +8,7 @@ const Calendar = () => {
     month: "long",
   }); //string of months from 1-12.
   monthStr = monthStr.charAt().toUpperCase() + monthStr.slice(1);
+
   /* Takes the first character of the month string and make it uppercase */
 
   /* Tracks the current month */
@@ -16,6 +16,8 @@ const Calendar = () => {
   const daysInPastMonth = new Date(year, currMonth, 0).getDate();
   const daysInCurrMonth = new Date(year, currMonth + 1, 0).getDate();
   const daysInNextMonth = new Date(year, currMonth + 2, 0).getDate();
+
+  console.log(dateObj.getDay());
 
   /* Loops through the numbers of days in the current month and pushes to currNumDays array */
   const pastNumDays = [];
@@ -30,8 +32,6 @@ const Calendar = () => {
   for (let i = 1; i <= daysInNextMonth; i++) {
     futureNumDays.push(i);
   }
-
-
 
   return (
     <div className="w-full h-3/5 flex justify-center items-end ">
