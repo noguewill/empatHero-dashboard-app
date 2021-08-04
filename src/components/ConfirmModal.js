@@ -1,16 +1,17 @@
 import adventureData from "./themeData";
+import LoopCalendar from "./LoopCalendar";
 const ConfirmModal = ({
   setConfirmModal,
-  confirmAdventure,
   setConfirmAdventure,
-  setCurrAdventure,
   currAdventure,
+  setAdventureDay,
 }) => {
+  const { todayFormatted } = LoopCalendar();
   const showWeeklyAdventure = () => {
     setConfirmModal(false);
     setConfirmAdventure(true);
+    setAdventureDay(todayFormatted);
   };
-
   return (
     <>
       <div className="absolute w-screen h-screen  bg-gray-900 bg-opacity-30 flex justify-center items-center">

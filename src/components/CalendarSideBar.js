@@ -1,10 +1,12 @@
 import Calendar from "./Calendar";
-const CalendarSideBar = () => {
+
+const CalendarSideBar = ({ adventureDay, setAdventureDay }) => {
   return (
     /* Calendar sidebar container */
-    <div className="w-2/6 h-5/6 mt-5 flex flex-col items-center justify-between bg-empatCalendarColor rounded-tr-xl rounded-br-xl ">
+    <div className="w-2/6 h-6/7  flex flex-col items-center justify-between bg-empatCalendarColor rounded-tr-xl rounded-br-xl ">
       {/* Calendar container */}
-      <Calendar />
+
+      <Calendar adventureDay={adventureDay} setAdventureDay={setAdventureDay} />
       {/* Calendar Legend container */}
       <div className=" w-full h-2/6 2xl:text-base text-sm flex flex-col  items-center ">
         <div className=" w-5/6 h-1/6 flex items-center my-3">

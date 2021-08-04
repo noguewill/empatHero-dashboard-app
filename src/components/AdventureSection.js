@@ -17,7 +17,10 @@ const AdventureSection = ({
           />
         </div>
         {/* Adventure Theme Button Confirmation */}
+
         <button
+          /* If currAdventure state wasn't set by the checkboxes, disable the button */
+          disabled={currAdventure === undefined ? "disabled" : ""}
           onClick={() => setConfirmModal(true)}
           className="bg-empatLightGreen 2xl:w-1/5  2xl:h-12 lg:w-44 lg:h-9 rounded-lg  self-end  text-white hover:bg-green-700 transition  ease-in-out"
         >
