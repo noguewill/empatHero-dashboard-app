@@ -1,52 +1,34 @@
-import { useState } from "react";
-const Calendar = () => {
-  const dateObj = new Date();
-  const month = dateObj.getUTCMonth(); // This gets an integer number of the day
-  const [currMonth, setCurrMonth] = useState(month);
-  const year = dateObj.getUTCFullYear(); /* Gets the year integer form YYYY */
-  let monthStr = new Date(year, currMonth, 1).toLocaleString("it-IT", {
-    month: "long",
-  }); //string of months from 1-12.
-  monthStr = monthStr.charAt().toUpperCase() + monthStr.slice(1);
+import LoopCalendar from "./LoopCalendar";
 
-  /* Takes the first character of the month string and make it uppercase */
+const Calendar = ({ adventureDay, setAdventureDay }) => {
+  /* Import and instatiation of functions that came from LoopCalendar custom hook function */
+  const {
+    calendarRows,
+    selectedDate,
+    todayFormatted,
+    daysShort,
+    monthNames,
+    getNextMonth,
+    getPrevMonth,
+  } = LoopCalendar();
 
-  /* Tracks the current month */
-  /* Takes the year and month variable to identify how many days there is in the current month */
-  const daysInPastMonth = new Date(year, currMonth, 0).getDate();
-  const daysInCurrMonth = new Date(year, currMonth + 1, 0).getDate();
-  const daysInNextMonth = new Date(year, currMonth + 2, 0).getDate();
+  /* Dayget  helper function, in case there's a need to access the calendar day on click */
+  const dateClickHandler = (date) => {
+    setAdventureDay(date);
 
-  const firstDay = new Date(year, month, 1);
-
-  console.log(dateObj.getDay());
-  console.log(firstDay);
-
-  /* Loops through the numbers of days in the current month and pushes to currNumDays array */
-  const pastNumDays = [];
-  for (let i = 1; i <= daysInPastMonth; i++) {
-    pastNumDays.push(i);
-  }
-  const currNumDays = [];
-  for (let i = 1; i <= daysInCurrMonth; i++) {
-    currNumDays.push(i);
-  }
-  const futureNumDays = [];
-  for (let i = 1; i <= daysInNextMonth; i++) {
-    futureNumDays.push(i);
-  }
+    console.log(date);
+  };
 
   return (
+    /* Calendar Body */
     <div className="w-full h-3/5 flex justify-center items-end ">
-      <div className=" w-10/12 h-6/7  flex flex-col justify-around font-bold">
-        <div className=" w-full  h-1/5 flex justify-between items-center">
+      <div className=" w-10/12 h-6/7  flex flex-col justify-around font-bold ">
+        {/* Calendar Month/Year head Container */}
+        <div className=" w-full  h-1/5 flex justify-between items-center mb-5">
           <div className="w-2/12 h-full flex justify-center items-center">
-            <button
-              className="w-3 h-3"
-              onClick={() => setCurrMonth(currMonth - 1)}
-            >
+            <button className="w-3 h-3" onClick={getPrevMonth}>
               <svg
-                className="w-3 h-3"
+                className="2xl:w-4 2xl:h-4 w-3 h-3"
                 viewBox="0 0 8 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -59,18 +41,19 @@ const Calendar = () => {
               </svg>
             </button>
           </div>
-          <div className="flex font-bold 2xl:text-xl lg:text-lg">
+          {/* Calendar Month name */}
+          <div className="flex font-bold 2xl:text-2xl lg:text-lg">
             <button className="mr-1">
-              {monthStr} {year}
+              {`${
+                monthNames[selectedDate.getMonth()]
+              }  ${selectedDate.getFullYear()}`}
             </button>
           </div>
+          {/* Right arrow press to go to next month */}
           <div className="w-2/12 h-full flex justify-center items-center">
-            <button
-              className="w-3 h-3"
-              onClick={() => setCurrMonth(currMonth + 1)}
-            >
+            <button className="w-3 h-3" onClick={getNextMonth}>
               <svg
-                className="w-3 h-3"
+                className="2xl:w-4 2xl:h-4 w-3 h-3"
                 viewBox="0 0 8 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,99 +67,53 @@ const Calendar = () => {
             </button>
           </div>
         </div>
-        <div className=" w-full h-1/7 2xl:text-base lg:text-xs text-empatGray grid grid-cols-7 place-items-center ">
-          <h4 className="">Lun</h4>
-          <h4 className="">Mar</h4>
-          <h4 className="">Mer</h4>
-          <h4 className="">Gio</h4>
-          <h4 className="">Ven</h4>
-          <h4 className="">Sab</h4>
-          <h4 className="">Dom</h4>
+        {/* Calendar week names header */}
+        <div className=" w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 place-items-center  mb-5">
+          {daysShort.map((day) => (
+            <h3 key={day}>{day}</h3>
+          ))}
         </div>
-        <div className="w-full h-full flex flex-col justify-around  items-center ">
-          <div className="w-full h-auto flex justify-between bg-gray-100 ">
-            {pastNumDays.slice(-2).map((pastDay, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs text-empatGray flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {pastDay}
-                </button>
-              );
-            })}
-
-            {/* Map is going through currNumDays array and returning a JSX element with the value inside of it, slice method is limiting it from 1-5 */}
-            {currNumDays.slice(0, 5).map((day, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {day}
-                </button>
-              );
-            })}
-          </div>
-          <div className="w-full h-auto flex justify-between  ">
-            {currNumDays.slice(5, 12).map((day, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {day}
-                </button>
-              );
-            })}
-          </div>
-          <div className="w-full h-auto flex justify-between  ">
-            {currNumDays.slice(12, 19).map((day, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {day}
-                </button>
-              );
-            })}
-          </div>
-          <div className="w-full h-auto flex justify-between  ">
-            {currNumDays.slice(19, 26).map((day, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {day}
-                </button>
-              );
-            })}
-          </div>
-          <div className="w-full h-auto flex justify-between  ">
-            {currNumDays.slice(26).map((day, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {day}
-                </button>
-              );
-            })}
-            {futureNumDays.slice(0, 2).map((futureDay, i) => {
-              return (
-                <button
-                  key={i}
-                  className=" w-10  h-9 2xl:text-base  lg:text-xs text-empatGray flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
-                >
-                  {futureDay}
-                </button>
-              );
-            })}
-          </div>
-        </div>
+        {/* Calendar days body */}
+        <section className="w-full h-full grid grid-rows-6 gap-3 ">
+          {Object.values(calendarRows).map((cols) => {
+            return (
+              <div
+                className="w-full h-auto flex items-center justify-around"
+                key={cols[0].date}
+              >
+                {/* Column dynamically separated so the day of today can be styled outside of the other days */}
+                {cols.map((col) =>
+                  col.date === todayFormatted ? (
+                    <div
+                      key={col.date}
+                      className="w-7  h-7 2xl:text-lg font-light  lg:text-sm  flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                    >
+                      <h2 onClick={() => dateClickHandler(col.date)}>
+                        {col.value}
+                      </h2>
+                    </div>
+                  ) : (
+                    <div
+                      id={col.date}
+                      key={col.date}
+                      className={`${(e) =>
+                        adventureDay === e.id
+                          ? "bg-empatLightBlue"
+                          : ""}w-7  h-7 2xl:text-lg  font-light lg:text-sm text-empatBlack cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
+                    >
+                      <h2
+                        className={`${col.classes}`}
+                        onClick={() => dateClickHandler(col.date)}
+                      >
+                        {col.value}
+                      </h2>
+                    </div>
+                  )
+                )}
+              </div>
+            );
+          })}
+        </section>
       </div>
     </div>
   );

@@ -17,6 +17,7 @@ module.exports = {
         empatGreen: "#3FA482",
         empatBlack: "#2C2C2C",
         empatGray: "#959595",
+        empatLightGray: "#F9F9F9",
         empatLightBlue: "#7EBCF3",
         empatLightGreen: "#9BD8C3",
         empatCalendarColor: "#F3F9F7",
