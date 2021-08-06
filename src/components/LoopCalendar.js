@@ -61,6 +61,7 @@ const LoopCalendar = (daysShort = daysShortArr, monthNames = monthNamesArr) => {
             ...calendarRows[i],
             {
               classes: "text-empatGray",
+              /* Gets the date formatted DD-MM-YYYY */
               date: `${prevMonthStartingPoint}-${
                 selectedDate.getMonth() === 0 ? 12 : selectedDate.getMonth()
               }-${
@@ -102,12 +103,13 @@ const LoopCalendar = (daysShort = daysShortArr, monthNames = monthNamesArr) => {
           ...calendarRows[i],
           {
             classes: "text-empatGray",
+            /* Gets the date formatted DD-MM-YYYY */
             date: `${nextMonthCounter}-${
               selectedDate.getMonth() + 2 === 13
                 ? 1
                 : selectedDate.getMonth() + 2
             }-${
-              selectedDate.getMonth() + 2 === 13
+              selectedDate.getMonth() + 2 === 4
                 ? selectedDate.getFullYear() + 1
                 : selectedDate.getFullYear()
             }`,

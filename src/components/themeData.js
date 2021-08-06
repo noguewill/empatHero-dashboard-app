@@ -37,7 +37,7 @@ const adventureData = [
     id: "vTempo",
     themeName: "Viaggio nel tempo",
     themeColor: "empatGreen",
-    themeIconColor: "#3FA482" /* Orange */,
+    themeIconColor: "#3FA482" /* Green */,
     themeBG: "",
     themeMessage:
       "Un'avventura incredibile, piena di nuovi amici! Lorem ipsum dolor sitamet ",

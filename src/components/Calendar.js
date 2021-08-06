@@ -15,8 +15,6 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
   /* Dayget  helper function, in case there's a need to access the calendar day on click */
   const dateClickHandler = (date) => {
     setAdventureDay(date);
-
-    console.log(date);
   };
 
   return (
@@ -42,7 +40,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
             </button>
           </div>
           {/* Calendar Month name */}
-          <div className="flex font-bold 2xl:text-2xl lg:text-lg">
+          <div className="flex font-extrabold 2xl:text-2xl lg:text-lg">
             <button className="mr-1">
               {`${
                 monthNames[selectedDate.getMonth()]
@@ -68,17 +66,17 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
           </div>
         </div>
         {/* Calendar week names header */}
-        <div className=" w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 place-items-center  mb-5">
+        <div className=" w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7   mb-5 ">
           {daysShort.map((day) => (
             <h3 key={day}>{day}</h3>
           ))}
         </div>
         {/* Calendar days body */}
-        <section className="w-full h-full grid grid-rows-6 gap-3 ">
+        <section className="w-full h-full grid grid-rows-7 auto-rows-auto">
           {Object.values(calendarRows).map((cols) => {
             return (
               <div
-                className="w-full h-auto flex items-center justify-around"
+                className="w-full h-auto grid grid-cols-7"
                 key={cols[0].date}
               >
                 {/* Column dynamically separated so the day of today can be styled outside of the other days */}
@@ -86,7 +84,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
                   col.date === todayFormatted ? (
                     <div
                       key={col.date}
-                      className="w-7  h-7 2xl:text-lg font-light  lg:text-sm  flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                      className="w-6  h-6  z-20 2xl:text-lg font-light  lg:text-sm  flex justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
                     >
                       <h2 onClick={() => dateClickHandler(col.date)}>
                         {col.value}
@@ -99,7 +97,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
                       className={`${(e) =>
                         adventureDay === e.id
                           ? "bg-empatLightBlue"
-                          : ""}w-7  h-7 2xl:text-lg  font-light lg:text-sm text-empatBlack cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
+                          : ""} w-6  h-6 2xl:text-lg  lg:text-sm text-empatBlack cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
                     >
                       <h2
                         className={`${col.classes}`}
@@ -120,3 +118,46 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
 };
 
 export default Calendar;
+
+{
+  /* <div className="w-full h-3/5 flex justify-center items-center">
+<Fragment>
+  <table className="">
+    <thead>
+      <tr>
+        {daysShort.map((day) => (
+          <th key={day}>{day}</th>
+        ))}
+      </tr>
+    </thead>
+    <tbody>
+      {Object.values(calendarRows).map((cols) => {
+        return (
+          <tr key={cols[0].date}>
+            {cols.map((col) =>
+              col.date === todayFormatted ? (
+                <td
+                  key={col.date}
+                  className={`${col.classes} today`}
+                  onClick={() => dateClickHandler(col.date)}
+                >
+                  {col.value}
+                </td>
+              ) : (
+                <td
+                  key={col.date}
+                  className={col.classes}
+                  onClick={() => dateClickHandler(col.date)}
+                >
+                  {col.value}
+                </td>
+              )
+            )}
+          </tr>
+        );
+      })}
+    </tbody>
+  </table>
+</Fragment>
+</div> */
+}

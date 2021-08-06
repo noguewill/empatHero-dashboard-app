@@ -4,71 +4,71 @@ const StudentsTable = ({ classChosen }) => {
   return (
     <>
       {/* Classes container */}
-      <section className="w-11/12 h-2/5 flex justify-center items-center mb-10 ">
+      <section className="w-11/12 2xl:h-3/6 h-full flex flex-col ">
         {/* TABLE */}
-        <div className="w-full h-full">
-          {/* Table category title container */}
-          <div className="w-full h-1/6 flex ">
-            <div className=" bg-empatLightBlue bg-opacity-30 w-full h-full 2xl:text-lg text-xs font-bold  grid grid-cols-6 place-items-center rounded-tl-xl">
-              <h4 className="pl-14 place-self-start self-center">Alunno</h4>
-              <h4 className="pl-14">Soprannome</h4>
-              <h4 className="pl-14">Bag</h4>
-              <h4 className="pl-10">Carica disegno</h4>
-              <h4 className="pl-10">Visualizza disegno</h4>
-              <h4 className="pl-10">Disegno mostrato</h4>
-            </div>
 
-            {/* !important  positional clutch to adapt to scroll table width*/}
-            <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl"></div>
+        {/* Table category title container */}
+        <div className="w-full 2xl:h-16 h-14 lg:h-10 flex ">
+          <div className=" bg-empatLightBlue bg-opacity-30 w-full h-full 2xl:text-lg text-xs font-bold grid grid-cols-6 place-items-center rounded-tl-xl">
+            <h4 className="pl-10 place-self-start self-center">Alunno</h4>
+            <h4 className="pl-14">Soprannome</h4>
+            <h4 className="pl-14">Bag</h4>
+            <h4 className="pl-10">Carica disegno</h4>
+            <h4 className="pl-10">Visualizza disegno</h4>
+            <h4 className="pl-10">Disegno mostrato</h4>
           </div>
-          {/* Table inner container */}
-          <div className="bg-empatCalendarColor w-full h-6/7 2xl:text-xl text-sm  rounded-b-xl  overflow-y-scroll-auto  scroller pb-1">
-            {/* Table column elements */}
-            {studentData[classChosen].map((student, index) => {
-              return (
-                <div
-                  key={index}
-                  className=" w-full h-1/6 grid grid-cols-6 place-items-center bg-gray-100  pl-10 "
-                >
-                  <h4 className="2xl:text-l place-self-start self-center pl-4 text-empatBlack">
-                    {student.name}
-                  </h4>
 
-                  <h4 className="2xl:text-lg place-self-start self-center 2xl:pl-12 lg:pl-8 pl-5 text-empatBlack">
-                    {student.nickName}
-                  </h4>
+          {/* !important  positional clutch to adapt to scroll table width*/}
+          <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl"></div>
+        </div>
+        {/* Table inner container */}
+        <div className="bg-empatCalendarColor w-full h-5/6  2xl:text-xl text-sm  rounded-b-xl  overflow-y-scroll-auto  scroller py-2 pb-3">
+          {/* Table column elements */}
+          {studentData[classChosen].map((student, index) => {
+            return (
+              /* Table element container */
+              <div
+                key={index}
+                className=" w-full h-1/6 grid grid-cols-6 place-items-center pl-10 "
+              >
+                <h4 className="2xl:text-l place-self-start self-center text-empatBlack font-bold">
+                  {student.name}
+                </h4>
 
-                  <h4 className=" ">{student.id}</h4>
+                <h4 className="2xl:text-lg place-self-start self-center 2xl:pl-12 lg:pl-8 pl-5 text-empatBlack">
+                  {student.nickName}
+                </h4>
 
-                  <div className="btnPlus 2xl:w-7 w-5 2xl:h-7 h-5 rounded-full flex items-center justify-center cursor-pointer  duration-150 transition-all">
-                    <p className="flex p-3 text-white 2xl:text-2xl">+</p>
-                  </div>
+                <h4>{student.id}</h4>
 
-                  <div className="searchIcon 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center cursor-pointer duration-150 transition-all">
-                    <svg
-                      className="w-3/5 h-3/5 text-center"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      focusable="false"
-                      preserveAspectRatio="xMidYMid meet"
-                      viewBox="0 0 12 12"
-                    >
-                      <g fill="none">
-                        <path
-                          d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
-                          fill="white"
-                        />
-                      </g>
-                    </svg>
-                  </div>
-                  <input
-                    type="checkbox"
-                    className="border-2 border-empatGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md hover:bg-gray-200 cursor-pointer duration-150 transition-all"
-                  ></input>
+                <div className="btnPlus text-white 2xl:text-2xl font-bold 2xl:w-7 w-5 2xl:h-7 h-5 rounded-full flex items-center justify-center cursor-pointer  duration-150 transition-all">
+                  <span className="2xl:mb-1">+</span>
                 </div>
-              );
-            })}
-          </div>
+
+                <div className="searchIcon 2xl:w-7 2xl:h-7 w-5 h-5 rounded-full flex items-center justify-center cursor-pointer duration-150 transition-all">
+                  <svg
+                    className="w-3/5 h-3/5 text-center"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    viewBox="0 0 12 12"
+                  >
+                    <g fill="none">
+                      <path
+                        d="M5 1a4 4 0 1 0 2.248 7.31l2.472 2.47a.75.75 0 1 0 1.06-1.06L8.31 7.248A4 4 0 0 0 5 1zM2.5 5a2.5 2.5 0 1 1 5 0a2.5 2.5 0 0 1-5 0z"
+                        fill="white"
+                      />
+                    </g>
+                  </svg>
+                </div>
+                <input
+                  type="checkbox"
+                  className="border-2 border-empatGray 2xl:w-6 2xl:h-6 w-4 h-4 rounded-md hover:bg-gray-200 cursor-pointer duration-150 transition-all"
+                ></input>
+              </div>
+            );
+          })}
         </div>
       </section>
     </>

@@ -5,7 +5,7 @@
 
 /* This file should be used for global resets only. For specific styling, Tailwind is preferred to maintain consistency*/
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -14,32 +14,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* *::-webkit-scrollbar {
-  width: 10px;
-
-}
- */
-
-/* 
-*::-webkit-scrollbar-track {
-  background: #f1f1f1;
-} */
-
-/* *::-webkit-scrollbar-thumb {
-  background: #888;
-}
- */
-
-/* *::-webkit-scrollbar-thumb:hover {
-  background: rgb(139, 183, 248);
-} */
-/* * *::-webkit-scrollbar {
-  height: 5px;
-}
-.scroller {
-  scrollbar-color: #7ebcf3 lightgray;
-  scrollbar-width: thin;
-} */
 .parent {
   display: grid;
   grid-template-columns: 1fr;
