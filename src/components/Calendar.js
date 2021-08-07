@@ -40,12 +40,12 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
             </button>
           </div>
           {/* Calendar Month name */}
-          <div className="flex font-extrabold 2xl:text-2xl lg:text-lg">
-            <button className="mr-1">
+          <div className="flex font-bold 2xl:text-2xl lg:text-lg">
+            <h1 className="mr-1">
               {`${
                 monthNames[selectedDate.getMonth()]
               }  ${selectedDate.getFullYear()}`}
-            </button>
+            </h1>
           </div>
           {/* Right arrow press to go to next month */}
           <div className="w-2/12 h-full flex justify-center items-center">
@@ -66,7 +66,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
           </div>
         </div>
         {/* Calendar week names header */}
-        <div className=" w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7   mb-5 ">
+        <div className=" w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
           {daysShort.map((day) => (
             <h3 key={day}>{day}</h3>
           ))}

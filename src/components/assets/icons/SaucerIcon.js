@@ -1,9 +1,9 @@
-const SafariIconLeft = ({ colorTheme }) => {
+const SafariIconLeft = ({ colorTheme, iconSize }) => {
   return (
     <>
       <svg
+        className={`${iconSize}`}
         xmlns="http://www.w3.org/2000/svg"
-        className="w-9/12 h-auto"
         viewBox="0 0 27 30"
         fill="none"
       >

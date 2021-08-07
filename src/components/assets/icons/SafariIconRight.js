@@ -2,7 +2,7 @@ const SafariIconRight = ({ colorTheme }) => {
   return (
     <>
       <svg
-        className="w-8/12 h-2/6 justify-end"
+        className={`w-8/12 h-2/6 justify-end`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 23 46"
         fill="none"

@@ -12,9 +12,9 @@ const StudentsTable = ({ classChosen }) => {
           <div className=" bg-empatLightBlue bg-opacity-30 w-full h-full 2xl:text-lg text-xs font-bold grid grid-cols-6 place-items-center rounded-tl-xl">
             <h4 className="pl-10 place-self-start self-center">Alunno</h4>
             <h4 className="pl-14">Soprannome</h4>
-            <h4 className="pl-14">Bag</h4>
-            <h4 className="pl-10">Carica disegno</h4>
-            <h4 className="pl-10">Visualizza disegno</h4>
+            <h4 className="2xl:pl-14 pl-16">Bag</h4>
+            <h4 className="2xl:pl-10 pl-16">Carica disegno</h4>
+            <h4 className="2xl:pl-10 pl-12">Visualizza disegno</h4>
             <h4 className="pl-10">Disegno mostrato</h4>
           </div>
 
@@ -22,7 +22,7 @@ const StudentsTable = ({ classChosen }) => {
           <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl"></div>
         </div>
         {/* Table inner container */}
-        <div className="bg-empatCalendarColor w-full h-5/6  2xl:text-xl text-sm  rounded-b-xl  overflow-y-scroll-auto  scroller py-2 pb-3">
+        <div className="bg-empatCalendarColor w-full h-5/6  2xl:text-xl text-xs font-bold  rounded-b-xl  overflow-y-scroll-auto  scroller py-2 pb-3">
           {/* Table column elements */}
           {studentData[classChosen].map((student, index) => {
             return (

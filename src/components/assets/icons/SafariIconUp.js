@@ -1,8 +1,8 @@
-const SafariIconUp = ({ colorTheme }) => {
+const SafariIconUp = ({ colorTheme, iconSize }) => {
   return (
     <>
       <svg
-        className="2xl:w-32 2xl:h-auto w-2/12 h-5/6"
+        className={`${iconSize}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 45 30"
         fill="none"

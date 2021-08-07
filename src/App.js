@@ -11,7 +11,6 @@ const App = () => {
   const [currAdventure, setCurrAdventure] = useState();
   const [classChosen, setClassChosen] = useState();
   const [adventureDay, setAdventureDay] = useState();
-  console.log(adventureDay);
 
   return (
     <>
