@@ -25,12 +25,18 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
             className=" bg-empatCalendarColor w-full h-4/6 flex "
           >
             <div className="w-1/12 h-full  flex flex-col justify-end pb-10">
-              <SaucerIcon colorTheme={card.themeIconColor} />
+              <SaucerIcon
+                colorTheme={card.themeIconColor}
+                iconSize={"w-9/12 h-auto"}
+              />
             </div>
             <div className="w-11/12 h-full  flex flex-col justify-evenly items-center ">
               <div className="w-full h-10  flex justify-center pl-10">
                 {/* Safari Up */}
-                <SafariIconUp colorTheme={card.themeIconColor} />
+                <SafariIconUp
+                  colorTheme={card.themeIconColor}
+                  iconSize={"2xl:w-32 2xl:h-auto w-2/12 h-5/6"}
+                />
               </div>
               <div className="w-full h-3/4 flex flex-col justify-end items-center">
                 <h1 className=" self-start 2xl:text-xl  text-base font-bold">
@@ -47,7 +53,10 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                   SCOPRI DI PIÚ
                 </h1>
                 {/* lion */}
-                <LionIcon colorTheme={card.themeIconColor} />
+                <LionIcon
+                  colorTheme={card.themeIconColor}
+                  iconSize={"w-4/12 h-full"}
+                />
               </div>
             </div>
             <div
@@ -63,7 +72,7 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                 disabled={
                   currAdventure !== i && active === true ? "disabled" : ""
                 }
-                className={`border-2  border-empatGray 2xl:w-6 2xl:h-6 w-4 h-4 rounded-md mt-4 hover:bg-gray-400 cursor-pointer duration-150 transition-all`}
+                className={`border-2  border-empatGray 2xl:w-6 2xl:h-6 w-5 h-5 rounded-md mt-4 hover:bg-gray-400 cursor-pointer duration-150 transition-all`}
               ></input>
             </div>
             <div className="w-1/12 h-full  flex items-center justify-end">

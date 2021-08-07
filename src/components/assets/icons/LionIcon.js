@@ -1,8 +1,8 @@
-const LionIcon = ({ colorTheme }) => {
+const LionIcon = ({ colorTheme, iconSize }) => {
   return (
     <>
       <svg
-        className="w-4/12 h-full"
+        className={`${iconSize}`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 37 30"
         fill="none"

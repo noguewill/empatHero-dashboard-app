@@ -58,8 +58,8 @@ const EventContainer = ({
         </>
       ) : (
         <>
-          <div className=" w-11/12 2xl:h-20 h-32">
-            <h2 className="font-bold 2xl:text-xl text-base text-empatBlack">
+          <div className=" w-11/12 2xl:h-20 h-32 2xl:mt-0 mt-3">
+            <h2 className="font-extrabold 2xl:text-xl  text-sm  text-empatBlack">
               Empa Avventura
             </h2>
             <h2 className="2xl:text-lg text-sm text-empatBlack ">

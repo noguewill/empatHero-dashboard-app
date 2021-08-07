@@ -6,42 +6,46 @@ import SaucerIcon from "./assets/icons/SaucerIcon";
 import LionIcon from "./assets/icons/LionIcon";
 const WeeklyAdventureSection = ({ currAdventure }) => {
   return (
-    <div className=" w-11/12 2xl:h-2/5 h-4/5 flex justify-between items-center">
+    <div className=" w-11/12 2xl:h-2/5 h-5/6 flex justify-between items-center">
       {" "}
       <div className=" w-2/6 h-full">
+        {/* Adventure card theme */}
         <div
           id={adventureData[currAdventure].id}
-          className=" bg-empatCalendarColor w-full h-3/6 flex "
+          className="bg-empatCalendarColor w-full 2xl:h-3/6 h-3/5 flex "
         >
-          <div className="w-2/12 h-full  flex flex-col justify-end pb-10">
+          <div className="w-1/12 h-full flex flex-col justify-end pb-10 mr-2">
             <SaucerIcon
               colorTheme={adventureData[currAdventure].themeIconColor}
+              iconSize={"w-full"}
             />
           </div>
-          <div className="w-11/12 h-full  flex flex-col justify-evenly items-center ">
-            <div className="w-full h-10  flex justify-center pl-10">
+          <div className="w-11/12 h-auto  flex flex-col justify-evenly items-center ">
+            <div className="w-full h-8  flex justify-center pl-10">
               {/* Safari Up */}
               <SafariIconUp
                 colorTheme={adventureData[currAdventure].themeIconColor}
+                iconSize={"2xl:w-8/12 2xl:h-10 w-8/12 h-7"}
               />
             </div>
-            <div className="w-full h-3/4 flex flex-col justify-end items-center">
-              <h1 className=" self-start 2xl:text-xl  text-base font-bold">
+            <div className="w-full 2xl:h-4/6 h-2/6 flex flex-col justify-end items-center mb-2">
+              <h1 className=" self-start 2xl:text-xl  text-sm font-bold">
                 {adventureData[currAdventure].themeName}
               </h1>
-              <h2 className="self-start  2xl:text-lg text-sm mb-5 max-w-md ">
+              <h2 className="self-start 2xl:text-lg text-xs  max-w-md ">
                 {adventureData[currAdventure].themeMessage}
               </h2>
             </div>
-            <div className="w-full h-1/5 flex justify-between">
+            <div className="w-full  h-2/6 flex justify-between">
               <h1
-                className={`underline 2xl:text-base 2xl:w-44  w-20 text-xxs font-bold text-${adventureData[currAdventure].themeColor} hover:text-opacity-70 cursor-pointer`}
+                className={`underline 2xl:text-base 2xl:w-44 w-20 text-xxs font-bold text-${adventureData[currAdventure].themeColor} hover:text-opacity-70 cursor-pointer`}
               >
                 SCOPRI DI PIÚ
               </h1>
               {/* lion */}
               <LionIcon
                 colorTheme={adventureData[currAdventure].themeIconColor}
+                iconSize={"2xl:w-4/12 2xl:h-11  w-4/12 h-8"}
               />
             </div>
           </div>
@@ -50,7 +54,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
         {/* Adventure notice card */}
         <div className={` w-full h-3/6 rounded-md flex items-center `}>
           <svg
-            className="2xl:w-7 2xl:h-7 w-6 h-6 mr-4 "
+            className="2xl:w-10 2xl:h-10 w-6 h-6 mr-4 "
             viewBox="0 0 10 28"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
