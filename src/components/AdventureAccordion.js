@@ -1,5 +1,6 @@
 import { useState } from "react";
 import adventureData from "./themeData";
+
 const AdventureAccordion = ({ currAdventure }) => {
   const [clicked, setClicked] = useState(false);
   const [index, setIndex] = useState();
@@ -12,6 +13,7 @@ const AdventureAccordion = ({ currAdventure }) => {
     setIndex(i);
     setClicked(i);
   };
+
   return (
     <>
       <div className="bg-empatCalendarColor w-full h-full flex flex-col justify-around items-center px-5">
@@ -23,14 +25,15 @@ const AdventureAccordion = ({ currAdventure }) => {
               <h2 className={`2xl:text-2xl text-base text-gray-600 font-bold `}>
                 {adventureData[currAdventure].themeWeekly[index].weekDate}
               </h2>
+
+              {/* "X" button */}
               <button
                 onClick={() => toggle(index)}
-                /*  className={`rounded-full bg-empatOrange flex justify-center items-center 2xl:w-9 2xl:h-9 w-5 h-5 z-20`} */
                 className={`rounded-full bg-${adventureData[currAdventure].themeColor} flex justify-center items-center 2xl:w-9 2xl:h-9 w-5 h-5 z-20`}
                 type="button flex justify-center items-center"
               >
                 <svg
-                  className="2xl:w-9 2xl:h-9 w-2 h-2 z-10"
+                  className="2xl:w-5 2xl:h-5 w-2 h-2 z-10"
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   focusable="false"
@@ -43,6 +46,7 @@ const AdventureAccordion = ({ currAdventure }) => {
                 </svg>
               </button>
             </div>
+
             <p className="2xl:max-w-3xl lg:max-w-xl lg:text-sm self-start 2xl:text-xl text-gray-700">
               {adventureData[currAdventure].themeWeekly[index].weekMessage}
             </p>
@@ -65,17 +69,18 @@ const AdventureAccordion = ({ currAdventure }) => {
                     className={`w-full h-1/6 flex items-center justify-between `}
                   >
                     <h2
-                      className={`2xl:text-xl text-base text-gray-600 font-bold z-20 `}
+                      className={`2xl:text-xl text-sm text-gray-600 font-bold z-20 `}
                     >
                       {week.weekDate}
                     </h2>
                     <button
+                      /* Toogle the accordion between open and closed */
                       onClick={() => toggle(i)}
                       className="rounded-full w-5 h-5 z-20"
                       type="button flex justify-center items-center"
                     >
                       <svg
-                        className="w-5 h-5 z-10"
+                        className=" 2xl:w-7 2xl:h-7 w-5 h-5 z-10"
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 23 22"
                         fill="none"
@@ -87,7 +92,6 @@ const AdventureAccordion = ({ currAdventure }) => {
                           fill={adventureData[currAdventure].themeIconColor}
                         />
                       </svg>
-                      {/* : <FiPlus />} */}
                     </button>
                   </div>
                 </>
