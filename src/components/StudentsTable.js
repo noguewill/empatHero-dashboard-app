@@ -4,34 +4,33 @@ const StudentsTable = ({ classChosen }) => {
   return (
     <>
       {/* Classes container */}
-      <section className="w-11/12 2xl:h-3/6 h-full flex flex-col ">
+      <section className="w-10.5/12 h-full flex flex-col ">
         {/* TABLE */}
-
         {/* Table category title container */}
         <div className="w-full 2xl:h-16 h-14 lg:h-10 flex ">
           <div className=" bg-empatLightBlue bg-opacity-30 w-full h-full 2xl:text-lg text-xs font-bold grid grid-cols-6 place-items-center rounded-tl-xl">
             <h4 className="pl-10 place-self-start self-center">Alunno</h4>
             <h4 className="pl-14">Soprannome</h4>
             <h4 className="2xl:pl-14 pl-16">Bag</h4>
-            <h4 className="2xl:pl-10 pl-16">Carica disegno</h4>
+            <h4 className="pl-16">Carica disegno</h4>
             <h4 className="2xl:pl-10 pl-12">Visualizza disegno</h4>
             <h4 className="pl-10">Disegno mostrato</h4>
           </div>
-
           {/* !important  positional clutch to adapt to scroll table width*/}
           <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl"></div>
         </div>
+
         {/* Table inner container */}
-        <div className="bg-empatCalendarColor w-full h-5/6  2xl:text-xl text-xs font-bold  rounded-b-xl  overflow-y-scroll-auto  scroller py-2 pb-3">
+        <div className="bg-empatLightGray w-full 2xl:h-3/4 h-4/5 2xl:text-xl text-xs rounded-b-xl overflow-y-scroll-auto scroller flex flex-col justify-center">
           {/* Table column elements */}
           {studentData[classChosen].map((student, index) => {
             return (
-              /* Table element container */
+              /* Table elements container */
               <div
                 key={index}
-                className=" w-full h-1/6 grid grid-cols-6 place-items-center pl-10 "
+                className="w-full 2xl:h-12 h-7 grid grid-cols-6 place-items-center pl-10 "
               >
-                <h4 className="2xl:text-l place-self-start self-center text-empatBlack font-bold">
+                <h4 className="2xl:text-lg place-self-start self-center text-empatBlack">
                   {student.name}
                 </h4>
 
@@ -62,6 +61,8 @@ const StudentsTable = ({ classChosen }) => {
                     </g>
                   </svg>
                 </div>
+
+                {/* Student's table checkbox */}
                 <input
                   type="checkbox"
                   className="border-2 border-empatGray 2xl:w-6 2xl:h-6 w-4 h-4 rounded-md hover:bg-gray-200 cursor-pointer duration-150 transition-all"
