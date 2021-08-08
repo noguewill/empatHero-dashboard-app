@@ -39,6 +39,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
               </svg>
             </button>
           </div>
+
           {/* Calendar Month name */}
           <div className="flex font-bold 2xl:text-2xl lg:text-lg">
             <h1 className="mr-1">
@@ -47,6 +48,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
               }  ${selectedDate.getFullYear()}`}
             </h1>
           </div>
+
           {/* Right arrow press to go to next month */}
           <div className="w-2/12 h-full flex justify-center items-center">
             <button className="w-3 h-3" onClick={getNextMonth}>
@@ -65,18 +67,20 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
             </button>
           </div>
         </div>
+
         {/* Calendar week names header */}
-        <div className=" w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
+        <div className="w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
           {daysShort.map((day) => (
             <h3 key={day}>{day}</h3>
           ))}
         </div>
+
         {/* Calendar days body */}
-        <section className="w-full h-full grid grid-rows-7 auto-rows-auto">
+        <section className="w-full h-full grid grid-rows-7">
           {Object.values(calendarRows).map((cols) => {
             return (
               <div
-                className="w-full h-auto grid grid-cols-7"
+                className="w-full h-auto grid grid-cols-7 gap-2"
                 key={cols[0].date}
               >
                 {/* Column dynamically separated so the day of today can be styled outside of the other days */}
@@ -84,7 +88,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
                   col.date === todayFormatted ? (
                     <div
                       key={col.date}
-                      className="w-6  h-6  z-20 2xl:text-lg font-light  lg:text-sm  flex justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                      className="w-6 h-6 z-20 2xl:text-lg lg:text-sm flex justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
                     >
                       <h2 onClick={() => dateClickHandler(col.date)}>
                         {col.value}
@@ -97,7 +101,7 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
                       className={`${(e) =>
                         adventureDay === e.id
                           ? "bg-empatLightBlue"
-                          : ""} w-6  h-6 2xl:text-lg  lg:text-sm text-empatBlack cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
+                          : ""} w-6  h-6 2xl:text-lg lg:text-sm text-empatBlack cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
                     >
                       <h2
                         className={`${col.classes}`}
@@ -118,46 +122,3 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
 };
 
 export default Calendar;
-
-{
-  /* <div className="w-full h-3/5 flex justify-center items-center">
-<Fragment>
-  <table className="">
-    <thead>
-      <tr>
-        {daysShort.map((day) => (
-          <th key={day}>{day}</th>
-        ))}
-      </tr>
-    </thead>
-    <tbody>
-      {Object.values(calendarRows).map((cols) => {
-        return (
-          <tr key={cols[0].date}>
-            {cols.map((col) =>
-              col.date === todayFormatted ? (
-                <td
-                  key={col.date}
-                  className={`${col.classes} today`}
-                  onClick={() => dateClickHandler(col.date)}
-                >
-                  {col.value}
-                </td>
-              ) : (
-                <td
-                  key={col.date}
-                  className={col.classes}
-                  onClick={() => dateClickHandler(col.date)}
-                >
-                  {col.value}
-                </td>
-              )
-            )}
-          </tr>
-        );
-      })}
-    </tbody>
-  </table>
-</Fragment>
-</div> */
-}

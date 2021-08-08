@@ -1,11 +1,10 @@
 import { useState } from "react";
-
 import LionIcon from "./assets/icons/LionIcon";
 import SaucerIcon from "./assets/icons/SaucerIcon";
 import SafariIconUp from "./assets/icons/SafariIconUp";
 import SafariIconRight from "./assets/icons/SafariIconRight";
-
 import adventureData from "./themeData";
+
 const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
   const [active, setActive] = useState(false);
 
@@ -22,9 +21,9 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
           <div
             key={i}
             id={card.id}
-            className=" bg-empatCalendarColor w-full h-4/6 flex "
+            className=" bg-empatLightGray w-full h-4/6 flex "
           >
-            <div className="w-1/12 h-full  flex flex-col justify-end pb-10">
+            <div className="w-1/12 h-full flex flex-col justify-end pb-10">
               <SaucerIcon
                 colorTheme={card.themeIconColor}
                 iconSize={"w-9/12 h-auto"}
