@@ -6,13 +6,13 @@ import SaucerIcon from "./assets/icons/SaucerIcon";
 import LionIcon from "./assets/icons/LionIcon";
 const WeeklyAdventureSection = ({ currAdventure }) => {
   return (
-    <div className=" w-11/12 2xl:h-2/5 h-5/6 flex justify-between items-center">
+    <div className=" w-11/12 h-5/6 flex justify-between items-center">
       {" "}
-      <div className=" w-2/6 h-full">
+      <div className="w-2/6 h-full">
         {/* Adventure card theme */}
         <div
           id={adventureData[currAdventure].id}
-          className="bg-empatCalendarColor w-full 2xl:h-3/6 h-3/5 flex "
+          className="bg-empatCalendarColor w-full 2xl:h-3/5 h-3/5 flex md:h-"
         >
           <div className="w-1/12 h-full flex flex-col justify-end pb-10 mr-2">
             <SaucerIcon
@@ -36,7 +36,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
                 {adventureData[currAdventure].themeMessage}
               </h2>
             </div>
-            <div className="w-full  h-2/6 flex justify-between">
+            <div className="w-full h-2/6 flex justify-between">
               <h1
                 className={`underline 2xl:text-base 2xl:w-44 w-20 text-xxs font-bold text-${adventureData[currAdventure].themeColor} hover:text-opacity-70 cursor-pointer`}
               >
@@ -52,7 +52,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
         </div>
 
         {/* Adventure notice card */}
-        <div className={` w-full h-3/6 rounded-md flex items-center `}>
+        <div className={`w-full h-3/6 rounded-md flex items-center `}>
           <svg
             className="2xl:w-10 2xl:h-10 w-6 h-6 mr-4 "
             viewBox="0 0 10 28"

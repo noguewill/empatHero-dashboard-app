@@ -1,7 +1,7 @@
 const ClassSelection = ({ setClassChosen }) => {
   return (
-    <div className="w-full flex flex-col items-center">
-      <div className=" w-11/12  h-1/7 flex flex-col justify-around mb-2">
+    <div className="w-9/12 flex flex-col items-center">
+      <div className=" w-10/12  h-1/7 flex flex-col justify-around mb-2">
         <h1 className="self-start 2xl:text-3xl md:text-2xl font-bold">
           Le tue classi
         </h1>
@@ -28,7 +28,7 @@ const ClassSelection = ({ setClassChosen }) => {
               /* Set class state equals to the id of the button that was clicked */
               onClick={(e) => setClassChosen(e.target.id)}
               type="button"
-              className="2xl:h-1/5 w-2/5 h-1/4 mr-5 self-end justify-self-end mt-2 rounded-lg border text-xs font-bold text-empatGreen hover:text-white bg-white border-empatGreen  hover:bg-empatGreen  transition duration-300 ease-in-out "
+              className="2xl:h-1/5 w-2/5 h-1/4 2xl:text-sm mr-5 self-end justify-self-end mt-2 rounded-lg border text-xs font-bold text-empatGreen hover:text-white bg-white border-empatGreen  hover:bg-empatGreen  transition duration-300 ease-in-out "
             >
               VISUALIZZA
             </button>
@@ -49,7 +49,7 @@ const ClassSelection = ({ setClassChosen }) => {
               id={1}
               onClick={(e) => setClassChosen(e.target.id)}
               type="button"
-              className="2xl:h-1/5 w-2/5 h-1/4 mr-5 self-end justify-self-end mt-2 rounded-lg border text-xs font-bold text-empatGreen hover:text-white bg-white border-empatGreen  hover:bg-empatGreen  transition duration-300 ease-in-out "
+              className="2xl:h-1/5 w-2/5 h-1/4 2xl:text-sm mr-5 self-end justify-self-end mt-2 rounded-lg border text-xs font-bold text-empatGreen hover:text-white bg-white border-empatGreen  hover:bg-empatGreen  transition duration-300 ease-in-out "
             >
               VISUALIZZA
             </button>

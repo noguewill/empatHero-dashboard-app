@@ -69,18 +69,18 @@ const Calendar = ({ adventureDay, setAdventureDay }) => {
         </div>
 
         {/* Calendar week names header */}
-        <div className="w-full h-1/7 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
+        <div className="w-full h-1/7 place-items-center 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
           {daysShort.map((day) => (
             <h3 key={day}>{day}</h3>
           ))}
         </div>
 
         {/* Calendar days body */}
-        <section className="w-full h-full grid grid-rows-7">
+        <section className="w-full h-full grid grid-rows-7 justify-items-center">
           {Object.values(calendarRows).map((cols) => {
             return (
               <div
-                className="w-full h-auto grid grid-cols-7 gap-2"
+                className="w-full h-auto grid grid-cols-7  place-items-center gap-3 "
                 key={cols[0].date}
               >
                 {/* Column dynamically separated so the day of today can be styled outside of the other days */}

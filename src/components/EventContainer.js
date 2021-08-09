@@ -13,9 +13,9 @@ const EventContainer = ({
   setClassChosen,
 }) => {
   return (
-    <div className="w-9/12 h-5/6 flex flex-col items-center">
+    <div className="w-9/12 h-6/7 flex flex-col items-center">
       {/* Headline for Classes Container */}
-      <div className=" w-11/12 h-1/7 flex flex-col justify-between 2xl:mb-4 mb-3">
+      <div className=" w-10.5/12 h-1/7 flex flex-col justify-between 2xl:mb-4 mb-3">
         <button
           onClick={() => setClassChosen(undefined)}
           className="flex w-1/6 items-center arrowContainer"
@@ -42,11 +42,11 @@ const EventContainer = ({
       {/* If  confirmAdventure is false  show adventure section if not, show WeeklyAdventureSection */}
       {!confirmAdventure ? (
         <>
-          <div className=" w-10.5/12">
-            <h2 className="font-bold 2xl:text-xl text-base text-empatBlack">
+          <div className=" w-10.5/12 2xl:mb-10 mt-5 mb-2">
+            <h2 className="font-bold 2xl:text-2xl text-sm text-empatBlack">
               Empa Avventura
             </h2>
-            <h2 className="2xl:text-lg font-bold text-gray-600 ">
+            <h2 className="2xl:text-lg text-xs font-bold text-gray-600 ">
               Seleziona un'Empa Avventura per iniziare!
             </h2>
           </div>
@@ -58,8 +58,8 @@ const EventContainer = ({
         </>
       ) : (
         <>
-          <div className=" w-10.5/12 2xl:h-20 h-32 2xl:mt-0 mt-3">
-            <h2 className="font-extrabold 2xl:text-xl  text-sm  text-empatBlack">
+          <div className=" w-10.5/12 2xl:h-20 h-32 2xl:mb-5 2xl:mt-0 mt-4">
+            <h2 className="font-extrabold 2xl:text-xl  text-sm  text-empatBlack ">
               Empa Avventura
             </h2>
             <h2 className="2xl:text-lg text-sm text-empatBlack ">
