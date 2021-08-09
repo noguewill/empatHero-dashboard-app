@@ -7,7 +7,7 @@ const AdventureSection = ({
   return (
     <>
       {/* Container of Adventure Section */}
-      <section className="w-10.5/12 2xl:h-2/6 h-2/5 flex flex-col justify-around">
+      <section className="w-10.5/12 2xl:h-2/6 h-2/6 flex flex-col justify-around">
         {/* If confirmAdventure is true */}
         <div className=" w-full h-3/4 grid grid-cols-2 gap-6">
           {/*Props indicates the current theme*/}

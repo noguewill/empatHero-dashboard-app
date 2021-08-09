@@ -38,10 +38,10 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                 />
               </div>
               <div className="w-full h-3/4 flex flex-col justify-end items-center">
-                <h1 className=" self-start 2xl:text-xl  text-base font-bold">
+                <h1 className=" self-start 2xl:text-xl  text-sm font-bold">
                   {card.themeName}
                 </h1>
-                <h2 className="self-start  2xl:text-lg text-sm mb-5 max-w-md ">
+                <h2 className="self-start  2xl:text-lg text-xs max-w-xs mb-5 ">
                   {card.themeMessage}
                 </h2>
               </div>
