@@ -1,7 +1,7 @@
 const ClassSelection = ({ setClassChosen }) => {
   return (
     <div className="w-9/12 flex flex-col items-center">
-      <div className=" w-10/12  h-1/7 flex flex-col justify-around mb-2">
+      <div className=" w-11/12  h-1/7 flex flex-col justify-around mb-2">
         <h1 className="self-start 2xl:text-3xl md:text-2xl font-bold">
           Le tue classi
         </h1>

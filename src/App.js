@@ -30,6 +30,7 @@ const App = () => {
       <NavBar />
       <div className="flex w-full h-6/7 vhEventContainer">
         <CalendarSideBar
+          currAdventure={currAdventure}
           adventureDay={adventureDay}
           setAdventureDay={setAdventureDay}
         />
