@@ -1,12 +1,16 @@
 import Calendar from "./Calendar";
 
-const CalendarSideBar = ({ adventureDay, setAdventureDay }) => {
+const CalendarSideBar = ({ currAdventure, adventureDay, setAdventureDay }) => {
   return (
     /* Calendar sidebar container */
     <div className="w-80 2xl:w-3/12 h-6/7  flex flex-col items-center justify-between bg-empatCalendarColor rounded-tr-xl rounded-br-xl ">
       {/* Calendar container */}
 
-      <Calendar adventureDay={adventureDay} setAdventureDay={setAdventureDay} />
+      <Calendar
+        currAdventure={currAdventure}
+        adventureDay={adventureDay}
+        setAdventureDay={setAdventureDay}
+      />
       {/* Calendar Legend container */}
       <div className=" w-full h-2/6 2xl:text-base text-sm flex flex-col  items-center ">
         <div className=" w-5/6 h-1/6 flex items-center my-3">

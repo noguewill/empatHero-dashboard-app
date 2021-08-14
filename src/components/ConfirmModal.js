@@ -11,6 +11,7 @@ const ConfirmModal = ({
     setConfirmModal(false);
     setConfirmAdventure(true);
     setAdventureDay(todayFormatted);
+    console.log(todayFormatted);
   };
   return (
     <>
