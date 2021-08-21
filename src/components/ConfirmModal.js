@@ -15,14 +15,14 @@ const ConfirmModal = ({
   };
   return (
     <>
-      <div className="absolute w-screen h-screen  bg-gray-900 bg-opacity-30 flex justify-center items-center">
+      <div className="absolute w-screen h-screen bg-gray-900 bg-opacity-30 flex justify-center items-center">
         {/* Modal container */}
-        <div className="bg-white w-auto h-72 flex flex-col rounded-xl ">
-          <div className="w-full flex justify-end pr-5 ">
+        <div className="bg-white w-auto h-72 flex flex-col rounded-xl">
+          <div className="w-full flex justify-end pr-5">
             <button
               onClick={() => setConfirmModal(false)}
               type="button"
-              className=" w-auto h-auto mt-1 lg:text-3xl text-3xl text-empatGreen   hover:text-red-500 xButton transition "
+              className="w-auto h-auto mt-1 lg:text-3xl text-3xl text-empatGreen hover:text-red-500 xButton transition "
             >
               x
             </button>
@@ -45,18 +45,18 @@ const ConfirmModal = ({
             </h5>
           </div>
           {/* Button container */}
-          <div className="w-full h-1/6 flex justify-around items-center   ">
+          <div className="w-full h-1/6 flex justify-around items-center">
             <button
               onClick={() => setConfirmModal(false)}
               type="button"
-              className="w-40 h-5/6 border border-empatGray font-bold 2xl:text-base text-xs flex justify-center items-center rounded-md hover:bg-red-500 transition-all duration-150 hover:text-white "
+              className="w-40 h-5/6 border border-empatGray font-bold 3xl:text-base 2xl:text-base text-xs flex justify-center items-center rounded-md hover:bg-red-500 transition-all duration-150 hover:text-white "
             >
               ANNULLA
             </button>
             <button
               onClick={() => showWeeklyAdventure()}
               type="button"
-              className="w-40 h-5/6 bg-empatGreen  text-white  2xl:text-base text-xs flex justify-center items-center rounded-md hover:bg-green-700 transition-all duration-150"
+              className="w-40 h-5/6 bg-empatGreen text-white 3xl:text-base 2xl:text-base text-xs flex justify-center items-center rounded-md hover:bg-green-700 transition-all duration-150"
             >
               CONFERMA
             </button>

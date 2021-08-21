@@ -16,11 +16,11 @@ const AdventureAccordion = ({ currAdventure }) => {
 
   return (
     <>
-      <div className="bg-empatCalendarColor w-full h-full flex flex-col justify-around items-center px-5">
+      <div className=" w-full 3xl:h-4/6 h-full flex flex-col justify-between items-center ">
         {clicked === index ? (
           <>
             <div
-              className={`w-full h-auto flex items-center justify-between transition duration-300 delay-75 ease-in-out `}
+              className={`w-full flex h-2/6 px-5 items-center justify-between transition duration-300 delay-75 ease-in-out dropShadow`}
             >
               <h2 className={`2xl:text-2xl text-base text-gray-600 font-bold `}>
                 {adventureData[currAdventure].themeWeekly[index].weekDate}
@@ -29,11 +29,13 @@ const AdventureAccordion = ({ currAdventure }) => {
               {/* "X" button */}
               <button
                 onClick={() => toggle(index)}
-                className={`rounded-full bg-${adventureData[currAdventure].themeColor} flex justify-center items-center 2xl:w-9 2xl:h-9 w-5 h-5 z-20`}
+                className={`rounded-full bg-${adventureData[currAdventure].themeColor} 
+                flex justify-center items-center
+                3xl:w-10 3xl:h-10 2xl:w-9 2xl:h-9 w-5 h-5 z-20`}
                 type="button flex justify-center items-center"
               >
                 <svg
-                  className="2xl:w-5 2xl:h-5 w-2 h-2 z-10"
+                  className="3xl:w-6 3xl:h-6 2xl:w-5 2xl:h-5 w-2 h-2 z-10"
                   xmlns="http://www.w3.org/2000/svg"
                   aria-hidden="true"
                   focusable="false"
@@ -46,17 +48,18 @@ const AdventureAccordion = ({ currAdventure }) => {
                 </svg>
               </button>
             </div>
-
-            <p className="2xl:max-w-3xl lg:max-w-xl lg:text-sm self-start 2xl:text-xl text-gray-700">
-              {adventureData[currAdventure].themeWeekly[index].weekMessage}
-            </p>
-            <button
-              className={`bg-${adventureData[currAdventure].themeColor} 2xl:w-60  2xl:h-16 lg:w-36 lg:h-10 rounded-xl self-start text-white hover:bg-opacity-90 transition  ease-in-out`}
-            >
-              <p className="2xl:text-lg font-bold  lg:text-xs ">
-                SCARICA LA MAPA
+            <div className="w-full h-full dropShadow flex flex-col justify-around py-2 px-5">
+              <p className="2xl:max-w-3xl lg:max-w-xl lg:text-sm  2xl:text-xl text-gray-700  ">
+                {adventureData[currAdventure].themeWeekly[index].weekMessage}
               </p>
-            </button>
+              <button
+                className={`bg-${adventureData[currAdventure].themeColor} 2xl:w-60  2xl:h-16 lg:w-36 lg:h-10 rounded-xl self-start text-white hover:bg-opacity-90 transition  ease-in-out`}
+              >
+                <p className="2xl:text-lg font-bold  lg:text-xs ">
+                  SCARICA LA MAPA
+                </p>
+              </button>
+            </div>
           </>
         ) : (
           <>
@@ -65,7 +68,7 @@ const AdventureAccordion = ({ currAdventure }) => {
                 <div
                   id={i}
                   key={i}
-                  className={`w-full h-1/6 flex items-center justify-between `}
+                  className={`w-full h-1/5 flex items-center justify-between px-5 dropShadow rounded-lg `}
                 >
                   <h2
                     className={`2xl:text-xl text-sm text-gray-600 font-bold z-20 `}
@@ -75,11 +78,11 @@ const AdventureAccordion = ({ currAdventure }) => {
                   <button
                     /* Toogle the accordion between open and closed */
                     onClick={() => toggle(i)}
-                    className="rounded-full w-5 h-5 z-20"
-                    type="button flex justify-center items-center"
+                    className="rounded-full 3xl:w-7 3xl:h-7 2xl:w-7 2xl:h-7 w-5 h-5 z-20 flex justify-center items-center"
+                    type="button"
                   >
                     <svg
-                      className=" 2xl:w-7 2xl:h-7 w-5 h-5 z-10"
+                      className="3xl:w-9 3xl:h-9 2xl:w-7 2xl:h-7 w-5 h-5 z-10"
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 23 22"
                       fill="none"

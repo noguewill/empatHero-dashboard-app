@@ -6,21 +6,21 @@ import SaucerIcon from "./assets/icons/SaucerIcon";
 import LionIcon from "./assets/icons/LionIcon";
 const WeeklyAdventureSection = ({ currAdventure }) => {
   return (
-    <div className=" w-11/12 h-5/6 flex justify-between items-center">
+    <div className=" w-10.5/12 h-5/6 flex justify-between items-center">
       {" "}
       <div className="w-2/6 h-full">
         {/* Adventure card theme */}
         <div
           id={adventureData[currAdventure].id}
-          className="bg-empatCalendarColor w-full 2xl:h-3/5 h-3/5 flex md:h-"
+          className="bg-empatCalendarColor w-full 3xl:h-2/6  2xl:h-3/6 h-3/5 flex dropShadow rounded-lg"
         >
-          <div className="w-1/12 h-full flex flex-col justify-end pb-10 mr-2">
+          <div className="w-1/12  h-full flex flex-col justify-end pb-10 mr-2">
             <SaucerIcon
               colorTheme={adventureData[currAdventure].themeIconColor}
               iconSize={"w-full"}
             />
           </div>
-          <div className="w-11/12 h-auto  flex flex-col justify-evenly items-center ">
+          <div className="w-10.5/12 h-auto  flex flex-col justify-evenly items-center ">
             <div className="w-full h-8  flex justify-center pl-10">
               {/* Safari Up */}
               <SafariIconUp
@@ -32,27 +32,27 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
               <h1 className=" self-start 2xl:text-xl  text-sm font-bold">
                 {adventureData[currAdventure].themeName}
               </h1>
-              <h2 className="self-start 2xl:text-lg text-xs  max-w-md ">
+              <h2 className="self-start 2xl:text-base text-xs  max-w-md ">
                 {adventureData[currAdventure].themeMessage}
               </h2>
             </div>
-            <div className="w-full h-2/6 flex justify-between">
+            <div className="w-full h-2/6 flex justify-between vhAdvThemeCard">
               <h1
-                className={`underline 2xl:text-base 2xl:w-44 w-20 text-xxs font-bold text-${adventureData[currAdventure].themeColor} hover:text-opacity-70 cursor-pointer`}
+                className={`underline 3xl:text-lg 2xl:text-base 2xl:w-44 w-20 text-xxs font-bold text-${adventureData[currAdventure].themeColor} hover:text-opacity-70 cursor-pointer`}
               >
                 SCOPRI DI PIÚ
               </h1>
               {/* lion */}
               <LionIcon
                 colorTheme={adventureData[currAdventure].themeIconColor}
-                iconSize={"2xl:w-4/12 2xl:h-11  w-4/12 h-8"}
+                iconSize={"2xl:w-4/12 2xl:h-9 w-4/12 h-8"}
               />
             </div>
           </div>
         </div>
 
         {/* Adventure notice card */}
-        <div className={`w-full h-3/6 rounded-md flex items-center `}>
+        <div className={`w-full h-3/6 rounded-md flex items-center`}>
           <svg
             className="2xl:w-10 2xl:h-10 w-6 h-6 mr-4 "
             viewBox="0 0 10 28"
@@ -77,7 +77,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
         </div>
       </div>
       {/* Accordion */}
-      <div className=" w-10/12 h-full px-5">
+      <div className=" w-10.5/12 h-full px-5">
         <AdventureAccordion currAdventure={currAdventure} />
       </div>
     </div>

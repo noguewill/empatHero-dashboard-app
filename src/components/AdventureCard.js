@@ -21,7 +21,7 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
           <div
             key={i}
             id={card.id}
-            className=" bg-empatLightGray w-full h-4/6 flex "
+            className="bg-empatLightGray w-full rounded-lg h-4/6 flex dropShadow"
           >
             <div className="w-1/12 h-full flex flex-col justify-end pb-10">
               <SaucerIcon
@@ -38,16 +38,16 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                 />
               </div>
               <div className="w-full h-3/4 flex flex-col justify-end items-center">
-                <h1 className=" self-start 2xl:text-xl  text-sm font-bold">
+                <h1 className=" self-start 3xl:text-2xl 2xl:text-xl vhlgFont text-sm font-bold vhMarginBottom">
                   {card.themeName}
                 </h1>
-                <h2 className="self-start  2xl:text-lg text-xs max-w-xs mb-5 ">
+                <h2 className="self-start 3xl:text-xl 2xl:text-lg vhsmFont text-xs 3xl:max-w-md 2xl:max-w-sm max-w-xs mb-5 ">
                   {card.themeMessage}
                 </h2>
               </div>
               <div className="w-full h-1/5 flex justify-between">
                 <h1
-                  className={`underline 2xl:text-base 2xl:w-44  w-20 text-xxs font-bold text-${card.themeColor} hover:text-opacity-70 cursor-pointer`}
+                  className={`underline 3xl:text-lg 2xl:text-base 2xl:w-44  w-20 text-xxs font-bold text-${card.themeColor} hover:text-opacity-70 cursor-pointer`}
                 >
                   SCOPRI DI PIÚ
                 </h1>
@@ -71,10 +71,10 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                 disabled={
                   currAdventure !== i && active === true ? "disabled" : ""
                 }
-                className={`border-2  border-empatGray 2xl:w-6 2xl:h-6 w-5 h-5 rounded-md mt-4 hover:bg-gray-400 cursor-pointer duration-150 transition-all`}
+                className={`border-2 bg-empatGreen border-empatGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-md mt-5 hover:bg-gray-400 cursor-pointer duration-150 transition-all`}
               ></input>
             </div>
-            <div className="w-1/12 h-full  flex items-center justify-end">
+            <div className="w-1/12 h-full flex items-center justify-end">
               <SafariIconRight colorTheme={card.themeIconColor} />
             </div>
           </div>

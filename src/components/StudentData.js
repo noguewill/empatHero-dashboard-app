@@ -42,6 +42,13 @@ const studentData = [
       class: "Classe 1ª B",
       drawing: "",
     },
+    {
+      id: "7",
+      name: "Minerva Onorizio",
+      nickName: "minaOno",
+      class: "Classe 1ª B",
+      drawing: "",
+    },
   ],
 
   [
