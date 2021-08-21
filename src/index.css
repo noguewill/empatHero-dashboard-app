@@ -110,18 +110,22 @@ body {
     -8px -8px 14px rgba(255, 255, 255, 0.7);
 }
 
-@media (min-width: 1280px) and (min-height: 720px) {
-  /* 900 height */
-  .vhBreak {
-    height: 39.75rem;
-  }
-  .vhAdvThemeCard {
-    height: 20%;
+@media (max-width: 1024px) {
+  body,
+  #root,
+  html {
+    height: 10%;
   }
 }
 
-@media (min-width: 1300px) and (min-height: 720px) {
-  /* 900 height */
+.vhBreak {
+  height: 34rem;
+}
+.vhAdvThemeCard {
+  height: 20%;
+}
+
+@media (min-width: 1200px) and (min-height: 580px) {
   .vhBreak {
     height: 39.75rem;
   }
