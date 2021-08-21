@@ -1,5 +1,4 @@
 import LoopCalendar from "./LoopCalendar";
-import SafariIconRight from "./assets/icons/SafariIconRight";
 import adventureData from "./themeData";
 
 const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
@@ -15,20 +14,20 @@ const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
   } = LoopCalendar();
 
   /* Dayget  helper function, in case there's a need to access the calendar day on click */
-  const dateClickHandler = (date) => {
+  /*   const dateClickHandler = (date) => {
     setAdventureDay(date);
-  };
+  }; */
 
   return (
     /* Calendar Body */
     <div className="w-full h-3/5 flex justify-center items-end ">
       <div className=" w-10/12 h-6/7  flex flex-col justify-around font-bold ">
         {/* Calendar Month/Year head Container */}
-        <div className=" w-full  h-1/5 flex justify-between items-center mb-5">
+        <div className=" w-full  h-1/5 flex justify-between items-center">
           <div className="w-2/12 h-full flex justify-center items-center">
             <button className="w-3 h-3" onClick={getPrevMonth}>
               <svg
-                className="2xl:w-4 2xl:h-4 w-3 h-3"
+                className="3xl:w-6 3xl:h-6 2xl:w-4 2xl:h-4 w-3 h-3"
                 viewBox="0 0 8 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +42,7 @@ const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
           </div>
 
           {/* Calendar Month name */}
-          <div className="flex font-bold 2xl:text-2xl lg:text-lg">
+          <div className="flex font-bold 3xl:text-3xl 2xl:text-2xl lg:text-lg ">
             <h1 className="mr-1">
               {`${
                 monthNames[selectedDate.getMonth()]
@@ -55,7 +54,7 @@ const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
           <div className="w-2/12 h-full flex justify-center items-center">
             <button className="w-3 h-3" onClick={getNextMonth}>
               <svg
-                className="2xl:w-4 2xl:h-4 w-3 h-3"
+                className="3xl:w-6 3xl:h-6 2xl:w-4 2xl:h-4 w-3 h-3"
                 viewBox="0 0 8 12"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -71,14 +70,14 @@ const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
         </div>
 
         {/* Calendar week names header */}
-        <div className="w-full h-1/7 place-items-center 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
+        <div className="w-full h-1/7 place-items-center 3xl:text-2xl 2xl:text-lg lg:text-xs text-empatGray grid grid-cols-7 mb-5">
           {daysShort.map((day) => (
             <h3 key={day}>{day}</h3>
           ))}
         </div>
 
         {/* Calendar days body */}
-        <section className="w-full h-full grid grid-rows-7 justify-items-center">
+        <section className="w-full h-4/6 grid grid-rows-7 justify-items-center">
           {Object.values(calendarRows).map((cols) => {
             return (
               <div
@@ -91,7 +90,7 @@ const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
                     <div
                       id={col.date}
                       key={col.date}
-                      className="w-6 h-6 z-20 2xl:text-lg lg:text-sm flex justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
+                      className="w-6 h-6 z-20 3xl:text-2xl 2xl:text-lg lg:text-sm flex justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out"
                     >
                       {/* On click, sets the clicked day to the current state */}
                       {col.date === adventureDay ? (
@@ -129,10 +128,10 @@ const Calendar = ({ currAdventure, adventureDay, setAdventureDay }) => {
                         col.date === adventureDay
                           ? "text-white"
                           : "text-empatBlack"
-                      } w-6  h-6 2xl:text-lg lg:text-sm   cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
+                      } w-6  h-6 3xl:text-2xl 2xl:text-lg lg:text-sm   cursor-pointer flex flex-wrap justify-center items-center hover:bg-blue-100 transition-all duration-300 ease-in-out`}
                     >
                       {col.date === adventureDay ? (
-                        <div className="2xl:w-12 2xl:h-12 w-8 h-8 absolute">
+                        <div className="3xl:w-14 3xl:h-14 2xl:w-12 2xl:h-12 w-8 h-8 absolute">
                           <svg
                             className="w-full h-full absolute"
                             viewBox="0 0 32 32"

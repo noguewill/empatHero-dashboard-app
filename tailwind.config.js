@@ -5,11 +5,14 @@ module.exports = {
     extend: {
       width: {
         "10.5/12": "89%",
+        "2.5/6": "27%",
       },
       height: {
         "1/7": "10%",
         "6/7": "90%",
         "7/8": "93%",
+        766: "39rem",
+        1080: "53.5rem",
       },
       fontSize: {
         xxs: "11px",
@@ -23,7 +26,11 @@ module.exports = {
         empatLightGray: "#F9F9F9",
         empatLightBlue: "#7EBCF3",
         empatLightGreen: "#9BD8C3",
-        empatCalendarColor: "#F3F9F7",
+        empatCalendarColor: "#E1F3ED59",
+      },
+      screens: {
+        "2xl": "1600px",
+        "3xl": "2000px",
       },
     },
   },

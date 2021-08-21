@@ -28,7 +28,7 @@ const App = () => {
       ) : null}
 
       <NavBar />
-      <div className="flex w-full h-6/7 vhEventContainer">
+      <div className="flex w-full vhBreak ">
         <CalendarSideBar
           currAdventure={currAdventure}
           adventureDay={adventureDay}

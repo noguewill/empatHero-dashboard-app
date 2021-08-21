@@ -3,7 +3,7 @@ import Calendar from "./Calendar";
 const CalendarSideBar = ({ currAdventure, adventureDay, setAdventureDay }) => {
   return (
     /* Calendar sidebar container */
-    <div className="w-80 2xl:w-3/12 h-6/7  flex flex-col items-center justify-between bg-empatCalendarColor rounded-tr-xl rounded-br-xl ">
+    <div className="w-80 2xl:w-3/12 h-full flex flex-col items-center justify-between bg-empatCalendarColor rounded-tr-3xl rounded-br-3xl ">
       {/* Calendar container */}
 
       <Calendar
@@ -12,8 +12,8 @@ const CalendarSideBar = ({ currAdventure, adventureDay, setAdventureDay }) => {
         setAdventureDay={setAdventureDay}
       />
       {/* Calendar Legend container */}
-      <div className=" w-full h-2/6 2xl:text-base text-sm flex flex-col  items-center ">
-        <div className=" w-5/6 h-1/6 flex items-center my-3">
+      <div className="w-full h-2/6 2xl:text-base text-sm flex flex-col  items-center 3xl:ml-20 ">
+        <div className="w-5/6 h-1/6 flex items-center my-3">
           <div className=" w-14 h-full 2xl:mr-5">
             <svg
               className="w-full h-full"
@@ -29,7 +29,7 @@ const CalendarSideBar = ({ currAdventure, adventureDay, setAdventureDay }) => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg font-bold text-empatBlack">
+          <h2 className="3xl:text-2xl 2xl:text-lg font-bold text-empatBlack">
             Giornata dell'Empatia
           </h2>
         </div>
@@ -49,7 +49,7 @@ const CalendarSideBar = ({ currAdventure, adventureDay, setAdventureDay }) => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg font-bold text-empatBlack">
+          <h2 className="3xl:text-2xl 2xl:text-lg font-bold text-empatBlack">
             Inizio EmpAvventura
           </h2>
         </div>
@@ -69,7 +69,7 @@ const CalendarSideBar = ({ currAdventure, adventureDay, setAdventureDay }) => {
               />
             </svg>
           </div>
-          <h2 className="2xl:text-lg font-bold text-empatBlack ">
+          <h2 className="3xl:text-2xl 2xl:text-lg font-bold text-empatBlack ">
             Creazione atti di gentilezza
           </h2>
         </div>

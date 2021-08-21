@@ -5,18 +5,20 @@
 
 /* This file should be used for global resets only. For specific styling, Tailwind is preferred to maintain consistency*/
 
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
 html,
-#root {
-  height: 100%;
-}
 body {
   margin: 0;
   padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
   font-family: "Nunito", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: 100%;
 }
 
 .parent {
@@ -43,6 +45,9 @@ body {
 }
 
 :hover.xButton {
+  transform: scale(1.3);
+}
+:hover.checkBoxIcon {
   transform: scale(1.3);
 }
 
@@ -80,36 +85,95 @@ body {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background: white;
+  width: 0.4rem;
+  height: 1rem;
 }
 
 *::-webkit-scrollbar-thumb {
   background-color: #7ebcf3;
   border-radius: 60px;
-  border: 2px solid white;
+  color: #7ebcf3;
+  z-index: 20;
+}
+
+*::-webkit-scrollbar-track {
+  background: #d1d0d0;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: rgb(139, 183, 248);
 }
 
 /* Box shadow parent element */
 .dropShadow {
-  box-shadow: -8px -8px 14px 0px #ffffffb2;
-  box-shadow: 8px 8px 14px 0px #e2e2e266;
-  -webkit-box-shadow: -8px -8px 14px 0px #ffffffb2;
-  -webkit-box-shadow: 8px 8px 14px 0px #e2e2e266;
+  box-shadow: 8px 8px 14px rgba(218, 216, 216, 0.4),
+    -8px -8px 14px rgba(255, 255, 255, 0.7);
 }
-@media (min-width: 1440px) and (min-height: 720px) {
-  .vhNavbar {
-    height: 8vw;
+
+@media (min-width: 1280px) and (min-height: 720px) {
+  /* 900 height */
+  .vhBreak {
+    height: 39.75rem;
   }
-  .vhEventContainer {
-    height: 80%;
+  .vhAdvThemeCard {
+    height: 20%;
   }
-  .vhFontSize {
+}
+
+@media (min-width: 1300px) and (min-height: 720px) {
+  /* 900 height */
+  .vhBreak {
+    height: 39.75rem;
+  }
+  .vhAdvThemeCard {
+    height: 20%;
+  }
+}
+
+@media (max-width: 1536px) and (min-height: 864px) {
+  .vhPadding {
+    padding-left: 2rem;
+  }
+  .vhBreak {
+    height: 42.04rem;
+  }
+  .vhAdventureHeight {
+    height: 92%;
+  }
+  .vhSpaceBetween {
+    justify-content: space-between;
+  }
+  .vhAdvThemeCard {
+    height: 20%;
+  }
+  .vhsmFont {
     font-size: 14px;
   }
-  .vhStudentTableMB {
+  .vhlgFont {
+    font-size: 1rem;
+  }
+  .vhMarginBottom {
+    margin-bottom: 0.4rem;
+  }
+}
+
+@media (min-width: 1440px) and (min-height: 900px) {
+  .vhBreak {
+    height: 45.75rem;
+  }
+  .vhClassCard {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1920px) and (min-height: 1080px) {
+  .vhBreak {
+    height: 53.5rem;
+  }
+}
+
+@media (min-width: 2000px) and (min-height: 1440px) {
+  .vhBreak {
+    height: 74.4rem;
   }
 }
