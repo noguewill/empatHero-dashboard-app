@@ -29,8 +29,8 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                 iconSize={"w-9/12 h-auto"}
               />
             </div>
-            <div className="w-11/12 h-full  flex flex-col justify-evenly items-center ">
-              <div className="w-full h-10  flex justify-center pl-10">
+            <div className="w-11/12 h-full flex flex-col justify-evenly items-center ">
+              <div className="w-full h-10 flex justify-center pl-10">
                 {/* Safari Up */}
                 <SafariIconUp
                   colorTheme={card.themeIconColor}
@@ -38,7 +38,7 @@ const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
                 />
               </div>
               <div className="w-full h-3/4 flex flex-col justify-end items-center">
-                <h1 className=" self-start 3xl:text-2xl 2xl:text-xl vhlgFont text-sm font-bold vhMarginBottom">
+                <h1 className="self-start 3xl:text-2xl 2xl:text-xl vhlgFont text-sm font-bold vhMarginBottom">
                   {card.themeName}
                 </h1>
                 <h2 className="self-start 3xl:text-xl 2xl:text-lg vhsmFont text-xs 3xl:max-w-md 2xl:max-w-sm max-w-xs mb-5 ">

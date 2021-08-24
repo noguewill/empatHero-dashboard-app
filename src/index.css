@@ -110,6 +110,10 @@ body {
     -8px -8px 14px rgba(255, 255, 255, 0.7);
 }
 
+.adventureCardColor {
+  background-color: #f9f9f9;
+}
+
 @media (max-width: 1024px) {
   body,
   #root,
@@ -129,8 +133,8 @@ body {
   .vhBreak {
     height: 39.75rem;
   }
-  .vhAdvThemeCard {
-    height: 20%;
+  .vhAdvThemeCardHeight {
+    height: 64%;
   }
 }
 
@@ -148,7 +152,7 @@ body {
     justify-content: space-between;
   }
   .vhAdvThemeCard {
-    height: 20%;
+    height: 27%;
   }
   .vhsmFont {
     font-size: 14px;
@@ -159,6 +163,9 @@ body {
   .vhMarginBottom {
     margin-bottom: 0.4rem;
   }
+  .vhAdvThemeCardHeight {
+    height: 60%;
+  }
 }
 
 @media (min-width: 1440px) and (min-height: 900px) {
@@ -168,11 +175,20 @@ body {
   .vhClassCard {
     width: 30%;
   }
+  .vhAdvThemeCardHeight {
+    height: 47%;
+  }
 }
 
 @media (min-width: 1920px) and (min-height: 1080px) {
+  .vhAdvThemeCardHeight {
+    height: 60%;
+  }
   .vhBreak {
     height: 53.5rem;
+  }
+  .vhAdvThemeCard {
+    height: 27%;
   }
 }
 
