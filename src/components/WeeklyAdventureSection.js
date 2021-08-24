@@ -12,7 +12,7 @@ const WeeklyAdventureSection = ({ currAdventure }) => {
         {/* Adventure card theme */}
         <div
           id={adventureData[currAdventure].id}
-          className="bg-empatCalendarColor w-full 3xl:h-2/6  2xl:h-3/6 h-3/5 flex dropShadow rounded-lg"
+          className="bg-empatLightGray w-full 3xl:h-2/6 h-3/5 flex dropShadow rounded-lg vhAdvThemeCardHeight"
         >
           <div className="w-1/12  h-full flex flex-col justify-end pb-10 mr-2">
             <SaucerIcon

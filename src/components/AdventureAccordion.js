@@ -20,9 +20,9 @@ const AdventureAccordion = ({ currAdventure }) => {
         {clicked === index ? (
           <>
             <div
-              className={`w-full flex h-2/6 px-5 items-center justify-between transition duration-300 delay-75 ease-in-out dropShadow`}
+              className={`w-full flex h-2/6 px-5 items-center justify-between bg-empatLightGray transition duration-300 delay-75 ease-in-out rounded-lg dropShadow`}
             >
-              <h2 className={`2xl:text-2xl text-base text-gray-600 font-bold `}>
+              <h2 className={`2xl:text-2xl text-base text-gray-600 font-bold`}>
                 {adventureData[currAdventure].themeWeekly[index].weekDate}
               </h2>
 
