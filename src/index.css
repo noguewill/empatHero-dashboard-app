@@ -180,7 +180,7 @@ body {
   }
 }
 
-@media (min-width: 1920px) and (min-height: 1080px) {
+@media (min-width: 1600px) {
   .vhAdvThemeCardHeight {
     height: 60%;
   }
