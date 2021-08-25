@@ -10,7 +10,7 @@ const StudentsTable = ({ classChosen }) => {
         <div className="w-full 3xl:h-16 2xl:h-14 h-14 lg:h-10 flex">
           <div className="bg-empatLightBlue bg-opacity-30 w-full h-full z-10 3xl:text-xl 2xl:text-lg text-xs font-bold grid grid-cols-6 place-items-center rounded-tl-xl ">
             <h4 className="pl-10 place-self-start self-center">Alunno</h4>
-            <h4 className="vhPadding 3xl:pl-2 2xl:pl-16 pl-9">Soprannome</h4>
+            <h4 className="vhPadding 3xl:pl-2 2xl:pl-16 pl-14">Soprannome</h4>
             <h4 className="2xl:pl-14 pl-14">Bag</h4>
             <h4 className="2xl:pl-14 pl-14">Carica disegno</h4>
             <h4 className="3xl:pl-14 2xl:pl-14 pl-9">Visualizza disegno</h4>
