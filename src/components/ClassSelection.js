@@ -13,7 +13,7 @@ const ClassSelection = ({ setClassChosen }) => {
       </div>
       <div className=" w-11/12 h-7/8 flex">
         {/* Class selection card */}
-        <div className="2xl:w-2.5/6 2xl:h-2/6 w-3.0/6 h-2/5 bg-empatLightGray  rounded-xl flex flex-col items-center justify-evenly  mr-10 dropShadow vhClassCard">
+        <div className="2xl:w-2.5/6 2xl:h-2/6  xl:w-3.0/6 xl:h-2/5 w-2/6 h-2/5 bg-empatLightGray  rounded-xl flex flex-col items-center justify-evenly  mr-10 dropShadow vhClassCard">
           <div className="3xl:9/12 w-11/12 h-5/6 flex flex-col justify-center py-2">
             <div className="h-3/6 self-center justify-self-center mb-5">
               <h1 className="3xl:text-5xl 2xl:text-4xl md:text-3xl font-semibold mb-5 ">
@@ -35,7 +35,7 @@ const ClassSelection = ({ setClassChosen }) => {
           </div>
         </div>
 
-        <div className="2xl:w-2.5/6 2xl:h-2/6 w-3.0/6 h-2/5 bg-empatLightGray  rounded-xl flex flex-col items-center justify-evenly  mr-10 dropShadow vhClassCard">
+        <div className="2xl:w-2.5/6 2xl:h-2/6  xl:w-3.0/6 xl:h-2/5 w-2/6 h-2/5 bg-empatLightGray  rounded-xl flex flex-col items-center justify-evenly  mr-10 dropShadow vhClassCard">
           <div className="3xl:9/12 w-11/12 h-5/6 flex flex-col justify-center py-2">
             <div className="h-3/6 self-center justify-self-center mb-5">
               <h1 className="3xl:text-5xl 2xl:text-4xl md:text-3xl font-semibold mb-5 ">
