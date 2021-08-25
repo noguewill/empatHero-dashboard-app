@@ -4,17 +4,17 @@ import React from "react";
 const StudentsTable = ({ classChosen }) => {
   return (
     <>
-      <section className="w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-72">
+      <section className="w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-64">
         {/* TABLE */}
         {/* Table category title container */}
         <div className="w-full 3xl:h-16 2xl:h-14 h-14 lg:h-10 flex">
           <div className="bg-empatLightBlue bg-opacity-30 w-full h-full z-10 3xl:text-xl 2xl:text-lg text-xs font-bold grid grid-cols-6 place-items-center rounded-tl-xl ">
             <h4 className="pl-10 place-self-start self-center">Alunno</h4>
-            <h4 className="vhPadding 3xl:pl-2 2xl:pl-16 pl-7">Soprannome</h4>
-            <h4 className="2xl:pl-14 pl-16">Bag</h4>
-            <h4 className="2xl:pl-14 pl-16">Carica disegno</h4>
-            <h4 className="3xl:pl-14 2xl:pl-14 pl-10">Visualizza disegno</h4>
-            <h4 className="3xl:pl-12 pl-10">Disegno mostrato</h4>
+            <h4 className="vhPadding 3xl:pl-2 2xl:pl-16 pl-9">Soprannome</h4>
+            <h4 className="2xl:pl-14 pl-14">Bag</h4>
+            <h4 className="2xl:pl-14 pl-14">Carica disegno</h4>
+            <h4 className="3xl:pl-14 2xl:pl-14 pl-9">Visualizza disegno</h4>
+            <h4 className="3xl:pl-12 pl-9">Disegno mostrato</h4>
           </div>
           {/* !important  positional clutch to adapt to scroll table width*/}
           <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl z-10"></div>
@@ -24,7 +24,7 @@ const StudentsTable = ({ classChosen }) => {
         <div className="w-full bg-empatLightGray dropShadow rounded-b-xl studentsParentContainer">
           <div className="bg-empatLightGray studentsTableContainer vhsmFont py-1 overflow-y-scroll 3xl:text-2xl 2xl:text-xl text-xs  flex flex-col justify-around ">
             {/* Table column elements */}
-            <div className="w-full  h-full grid 2xl:gap-6 gap-4 grid-cols-6 place-items-center py-2 pl-10">
+            <div className="w-full  h-full grid 2xl:gap-6 gap-3 grid-cols-6 place-items-center py-2 pl-10">
               {studentData[classChosen].map((student, index) => {
                 return (
                   /* Table elements container */
