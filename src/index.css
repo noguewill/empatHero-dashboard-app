@@ -85,7 +85,7 @@ body {
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 0.45rem;
+  width: 0.43rem;
   height: 1rem;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 .studentsTableContainer {
   width: 99.4%;
-  height: 98%;
+  height: 99%;
 }
 
 .vhBreak {
@@ -134,7 +134,7 @@ body {
     height: 36rem;
   }
   .vhAdvThemeCardHeight {
-    height: 78%;
+    height: 60%;
   }
 }
 
