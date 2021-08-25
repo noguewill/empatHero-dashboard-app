@@ -4,7 +4,7 @@ import React from "react";
 const StudentsTable = ({ classChosen }) => {
   return (
     <>
-      <section className="w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-64">
+      <section className="w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-56">
         {/* TABLE */}
         {/* Table category title container */}
         <div className="w-full 3xl:h-16 2xl:h-14 h-14 lg:h-10 flex">

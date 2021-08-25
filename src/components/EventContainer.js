@@ -13,7 +13,7 @@ const EventContainer = ({
   setClassChosen,
 }) => {
   return (
-    <div className="w-4/5 2xl:h-full  h-5/6 flex flex-col items-center vhAdventureHeight">
+    <div className="w-4/5 2xl:h-full h-6/7 flex flex-col items-center vhAdventureHeight">
       {/* Headline for Classes Container */}
       <div className=" w-10.5/12 h-1/7 flex flex-col justify-between 2xl:mb-4 mb-3">
         <button

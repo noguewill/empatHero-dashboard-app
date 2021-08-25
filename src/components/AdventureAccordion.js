@@ -16,7 +16,7 @@ const AdventureAccordion = ({ currAdventure }) => {
 
   return (
     <>
-      <div className=" w-full 3xl:h-4/6 h-full flex flex-col justify-between items-center ">
+      <div className=" w-full 3xl:h-4/6 2xl:h-full h-56 flex flex-col justify-between items-center ">
         {clicked === index ? (
           <>
             <div
@@ -68,7 +68,7 @@ const AdventureAccordion = ({ currAdventure }) => {
                 <div
                   id={i}
                   key={i}
-                  className={`w-full h-1/5 flex items-center justify-between px-5 dropShadow rounded-lg `}
+                  className={`w-full h-full flex items-center justify-between px-5 dropShadow rounded-lg `}
                 >
                   <h2
                     className={`2xl:text-xl text-sm text-gray-600 font-bold z-20 `}
