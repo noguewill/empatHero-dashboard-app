@@ -122,19 +122,22 @@ body {
   height: 99%;
 }
 
-.vhBreak {
-  height: 34rem;
-}
 .vhAdvThemeCard {
   height: 20%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
   .vhBreak {
-    height: 36rem;
+    height: 33rem;
   }
   .vhAdvThemeCardHeight {
     height: 60%;
+  }
+  .vhAdvThemeCard {
+    height: 20%;
   }
 }
 
