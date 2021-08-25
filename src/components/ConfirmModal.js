@@ -15,9 +15,9 @@ const ConfirmModal = ({
   };
   return (
     <>
-      <div className="absolute w-screen h-screen bg-gray-900 bg-opacity-30 flex justify-center items-center">
+      <div className="absolute w-screen h-screen bg-gray-900 bg-opacity-30 flex justify-center items-center z-20">
         {/* Modal container */}
-        <div className="bg-white w-auto h-72 flex flex-col rounded-xl">
+        <div className="bg-white w-auto h-72 flex flex-col rounded-xl z-30">
           <div className="w-full flex justify-end pr-5">
             <button
               onClick={() => setConfirmModal(false)}
