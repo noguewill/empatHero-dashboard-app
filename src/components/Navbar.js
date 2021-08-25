@@ -2,7 +2,7 @@ import EmpatHeroLogo from "./assets/EmpatHeroLogo";
 
 const Navbar = () => {
   return (
-    <div className="w-screen  flex items-center justify-center vhNavbar 3xl:h-40 2xl:h-28 h-20">
+    <div className="w-screen  flex items-center justify-center vhNavbar 3xl:h-40 2xl:h-28 xl:h-20 h-16">
       <nav className=" w-11/12  flex justify-between items-center">
         <div className="  flex items-center ">
           <EmpatHeroLogo />

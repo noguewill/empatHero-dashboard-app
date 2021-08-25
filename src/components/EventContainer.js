@@ -15,7 +15,7 @@ const EventContainer = ({
   return (
     <div className="w-4/5 2xl:h-full h-6/7 flex flex-col items-center vhAdventureHeight">
       {/* Headline for Classes Container */}
-      <div className=" w-10.5/12 h-1/7 flex flex-col justify-between 2xl:mb-4 mb-3">
+      <div className=" w-10.5/12 h-1/7 flex flex-col justify-between 2xl:mb-4 xl:mb-3 mb-2">
         <button
           onClick={() => setClassChosen(undefined)}
           className="flex w-1/6 items-center 2xl:mb-2 arrowContainer"
@@ -42,7 +42,7 @@ const EventContainer = ({
       {/* If  confirmAdventure is false  show adventure section if not, show WeeklyAdventureSection */}
       {!confirmAdventure ? (
         <>
-          <div className="w-10.5/12 mt-7 mb-2">
+          <div className="w-10.5/12 xl:mt-7  mt-4 mb-2">
             <h2 className="font-bold 3xl:text-2xl 2xl:text-2xl text-sm text-empatBlack">
               Empa Avventura
             </h2>
