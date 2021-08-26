@@ -1,19 +1,22 @@
-import { useState } from "react";
 import LionIcon from "./assets/icons/LionIcon";
 import SaucerIcon from "./assets/icons/SaucerIcon";
 import SafariIconUp from "./assets/icons/SafariIconUp";
 import SafariIconRight from "./assets/icons/SafariIconRight";
 import adventureData from "./themeData";
 
-const AdventureCard = ({ currAdventure, setCurrAdventure }) => {
-  const [active, setActive] = useState(false);
-
+const AdventureCard = ({
+  currAdventure,
+  setCurrAdventure,
+  active,
+  setActive,
+}) => {
   /* This function checks the key id of the dynamically generated JSX element and compares to the current selected active state ID */
   const selectAdventure = (themeId) => {
     setCurrAdventure(themeId);
 
     setActive(!active);
   };
+
   return (
     <>
       {adventureData.map((card, i) => {
