@@ -17,10 +17,10 @@ const StudentsTable = ({ classChosen }) => {
             </h4>
             <h4 className="2xl:pl-14 xl:pl-14 pl-14">Bag</h4>
             <h4 className="2xl:pl-14 xl:pl-14 pl-11">Carica disegno</h4>
-            <h4 className="3xl:pl-14 2xl:pl-14 xl:pl-9 pl-7">
+            <h4 className="3xl:pl-14 2xl:pl-14 xl:pl-9 pl-5">
               Visualizza disegno
             </h4>
-            <h4 className="3xl:pl-12 xl:pl-9 pl-8">Disegno mostrato</h4>
+            <h4 className="3xl:pl-12 xl:pl-9 pl-7">Disegno mostrato</h4>
           </div>
           {/* !important  positional clutch to adapt to scroll table width*/}
           <div className=" bg-empatLightBlue bg-opacity-30 w-6 h-full rounded-tr-xl z-10"></div>
