@@ -1,9 +1,13 @@
+import { useState } from "react";
 import AdventureCard from "./AdventureCard";
+
 const AdventureSection = ({
   currAdventure,
   setCurrAdventure,
   setConfirmModal,
 }) => {
+  const [active, setActive] = useState(false);
+
   return (
     <>
       {/* Container of Adventure Section */}
@@ -14,6 +18,8 @@ const AdventureSection = ({
           <AdventureCard
             currAdventure={currAdventure}
             setCurrAdventure={setCurrAdventure}
+            active={active}
+            setActive={setActive}
           />
         </div>
         {/* Adventure Theme Button Confirmation */}
@@ -21,9 +27,11 @@ const AdventureSection = ({
           /* If currAdventure state wasn't set by the checkboxes, disable the button */
           disabled={currAdventure === undefined ? "disabled  " : ""}
           onClick={() => setConfirmModal(true)}
-          className="bg-empatLightGreen 2xl:w-2/12  2xl:h-14 lg:w-44 lg:h-9 rounded-xl self-end text-white hover:bg-green-700 transition ease-in-out"
+          className={`2xl:w-2/12  2xl:h-14 lg:w-44 lg:h-9 rounded-xl self-end text-white hover:bg-green-700 transition ease-in-out ${
+            active ? "bg-green-700" : "bg-empatLightGreen"
+          }`}
         >
-          <p className="3xl:text-base 2xl:text-sm font-bold lg:text-xxs">
+          <p className={`3xl:text-base 2xl:text-sm font-bold lg:text-xxs `}>
             SCEGLI EMPA AVVENTURA
           </p>
         </button>
