@@ -1,13 +1,19 @@
 import studentData from "./StudentData";
 import React from "react";
+import { useState } from "react";
 
 const StudentsTable = ({ classChosen }) => {
+  const [openTable, setOpenTable] = useState(true);
   return (
     <>
-      <section className="w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-56">
+      <section
+        className={`w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-56 ${
+          openTable ? "block" : "hidden"
+        }`}
+      >
         {/* TABLE */}
         {/* Table category title container */}
-        <div className="w-full 3xl:h-16 2xl:h-14 h-14 lg:h-10 flex">
+        <div className="w-full 3xl:h-16 2xl:h-14 h-14 lg:h-10 flex ">
           <div className="bg-empatLightBlue bg-opacity-30 w-full h-full z-10 3xl:text-xl 2xl:text-lg text-xs font-bold grid grid-cols-6 place-items-center rounded-tl-xl ">
             <h4 className="xl:pl-10 place-self-start self-center pl-9">
               Alunno
@@ -27,7 +33,7 @@ const StudentsTable = ({ classChosen }) => {
         </div>
 
         {/* Table inner container */}
-        <div className="w-full bg-empatLightGray dropShadow rounded-b-xl studentsParentContainer">
+        <div className="w-full bg-empatLightGray dropShadow rounded-b-xl studentsParentContainer ">
           <div className="bg-empatLightGray studentsTableContainer vhsmFont py-1 overflow-y-scroll 3xl:text-2xl 2xl:text-xl text-xs  flex flex-col justify-around ">
             {/* Table column elements */}
             <div className="w-full  h-full grid 2xl:gap-6 gap-3 grid-cols-6 place-items-center py-2 pl-10">
@@ -45,10 +51,18 @@ const StudentsTable = ({ classChosen }) => {
 
                     <h4 key={index}>{student.id}</h4>
 
-                    <div className="btnPlus text-white 2xl:text-2xl font-bold 2xl:w-8 w-6 2xl:h-8 h-6 rounded-full flex items-center justify-center cursor-pointer  duration-150 transition-all">
+                    <div className="btnPlus relative 2xl:text-2xl 2xl:w-8 w-6 2xl:h-8 h-6  flex items-center justify-center duration-150 transition-all">
                       {/* Plus button */}
+
+                      <input
+                        className="absolute w-14 -left-6 opacity-0"
+                        type="file"
+                        value=""
+                        title=" "
+                      />
+
                       <svg
-                        className="w-full h-full"
+                        className="w-96 h-full"
                         viewBox="0 0 24 24"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
@@ -82,6 +96,7 @@ const StudentsTable = ({ classChosen }) => {
 
                     {/* Student's table checkbox */}
                     <input
+                      onClick={() => setOpenTable(!openTable)}
                       type="checkbox"
                       className="border-2 border-empatLightGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-sm hover:bg-gray-200 cursor-pointer duration-150 transition-all"
                     ></input>
