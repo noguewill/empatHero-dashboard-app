@@ -1,15 +1,11 @@
 import studentData from "./StudentData";
 import React from "react";
-import { useState } from "react";
 
 const StudentsTable = ({ classChosen }) => {
-  const [openTable, setOpenTable] = useState(true);
   return (
     <>
       <section
-        className={`w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-56 ${
-          openTable ? "block" : "hidden"
-        }`}
+        className={`w-10.5/12 flex flex-col justify-around 2xl:max-h-96 max-h-56`}
       >
         {/* TABLE */}
         {/* Table category title container */}
@@ -96,7 +92,6 @@ const StudentsTable = ({ classChosen }) => {
 
                     {/* Student's table checkbox */}
                     <input
-                      onClick={() => setOpenTable(!openTable)}
                       type="checkbox"
                       className="border-2 border-empatLightGray 2xl:w-7 2xl:h-7 w-5 h-5 rounded-sm hover:bg-gray-200 cursor-pointer duration-150 transition-all"
                     ></input>
